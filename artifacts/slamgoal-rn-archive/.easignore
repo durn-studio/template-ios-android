@@ -1,0 +1,60 @@
+# .easignore — duplicate at the app root for monorepo eas-cli.
+# eas.json lives at the workspace root
+# but eas-cli in a pnpm monorepo reads .easignore from the directory
+# where the build is invoked (artifacts/slamgoal/), not from
+# alongside eas.json. Keeping a copy in both places covers both
+# behaviours. See also: ../.easignore at the workspace root.
+#
+# Patterns here are relative to the project root that eas-cli
+# uploads (the workspace root in a monorepo), so absolute-ish
+# paths like .git/ and artifacts/web/ still resolve correctly.
+
+# Git history — biggest single saving (~479 MB on this repo).
+.git/
+
+# Dependencies — EAS reinstalls on the worker.
+node_modules/
+.pnpm-store/
+
+# Build artifacts that may exist locally but get regenerated on EAS.
+artifacts/slamgoal/ios/
+artifacts/slamgoal/android/
+artifacts/slamgoal/.expo/
+artifacts/slamgoal/dist/
+artifacts/slamgoal/web-build/
+ios/
+android/
+.expo/
+dist/
+web-build/
+
+# Other workspaces — not part of the iOS app build context.
+artifacts/api-server/
+artifacts/mockup-sandbox/
+artifacts/web/
+
+# Local files that aren't tracked or needed.
+attached_assets/
+Logs-*
+*.log
+.DS_Store
+
+# Locally-downloaded native build artifacts.
+*.ipa
+*.aab
+*.apk
+*.app.zip
+
+# Common monorepo extras.
+docs/
+.github/
+.agents/
+
+# EAS keeps its own credential cache; no need to upload.
+.turbo/
+.cache/
+
+# Editor / OS junk
+.vscode/
+.idea/
+*.swp

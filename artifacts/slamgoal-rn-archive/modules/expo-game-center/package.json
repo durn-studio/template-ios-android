@@ -1,0 +1,8 @@
+{
+  "name": "expo-game-center",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Local Expo module — iOS Game Center (GameKit) bridge.",
+  "main": "src/index.ts",
+  "types": "src/index.ts"
+}

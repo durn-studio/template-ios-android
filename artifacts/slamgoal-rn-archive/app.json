@@ -1,0 +1,269 @@
+{
+  "expo": {
+    "name": "Slam Goal",
+    "slug": "slamgoal",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "icon": "./assets/images/icon.png",
+    "scheme": "slamgoal",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-bg.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0d1b2a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "REPLACE_WITH_IOS_BUNDLE_ID",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/"
+      }
+    },
+    "android": {
+      "backgroundColor": "#0d1b2a",
+      "package": "REPLACE_WITH_ANDROID_PACKAGE",
+      "permissions": [
+        "android.permission.INTERNET",
+        "com.google.android.gms.permission.AD_ID"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "We use this identifier to deliver relevant ads and measure ad performance. You can change this anytime in Settings."
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "iosAppId": "REPLACE_WITH_ADMOB_IOS_APP_ID",
+          "androidAppId": "REPLACE_WITH_ADMOB_ANDROID_APP_ID",
+          "userTrackingUsageDescription": "We use this identifier to deliver relevant ads and measure ad performance. You can change this anytime in Settings.",
+          "skAdNetworkItems": [
+            "gta9lk7p23.skadnetwork",
+            "cstr6suwn9.skadnetwork",
+            "4fzdc2evr5.skadnetwork",
+            "4pfyvq9l8r.skadnetwork",
+            "2fnua5tdw4.skadnetwork",
+            "ydx93a7ass.skadnetwork",
+            "p78axxw29g.skadnetwork",
+            "v72qych5uu.skadnetwork",
+            "ludvb6z3bs.skadnetwork",
+            "cp8zw746q7.skadnetwork",
+            "3sh42y64q3.skadnetwork",
+            "c6k4g5qg8m.skadnetwork",
+            "s39g8k73mm.skadnetwork",
+            "3qy4746246.skadnetwork",
+            "f38h382jlk.skadnetwork",
+            "hs6bdukanm.skadnetwork",
+            "v4nxqhlyqp.skadnetwork",
+            "wzmmz9fp6w.skadnetwork",
+            "yclnxrl5pm.skadnetwork",
+            "t38b2kh725.skadnetwork",
+            "7ug5zh24hu.skadnetwork",
+            "9rd848q2bz.skadnetwork",
+            "n6fk4nfna4.skadnetwork",
+            "kbd757ywx3.skadnetwork",
+            "9t245vhmpl.skadnetwork",
+            "a2p9lx4jpn.skadnetwork",
+            "22mmun2rn5.skadnetwork",
+            "4468km3ulz.skadnetwork",
+            "2u9pt9hc89.skadnetwork",
+            "8s468mfl3y.skadnetwork",
+            "av6w8kgt66.skadnetwork",
+            "klf5c3l5u5.skadnetwork",
+            "ppxm28t8ap.skadnetwork",
+            "424m5254lk.skadnetwork",
+            "uw77j35x4d.skadnetwork",
+            "578prtvx9j.skadnetwork",
+            "4dzt52r2t5.skadnetwork",
+            "e5fvkxwrpn.skadnetwork",
+            "8c4e2ghe7u.skadnetwork",
+            "zq492l623r.skadnetwork",
+            "3rd42ekr43.skadnetwork",
+            "3qcr597p9d.skadnetwork",
+            "n9x2a789qt.skadnetwork",
+            "mlmmfzh3r3.skadnetwork",
+            "488r3q3dtq.skadnetwork",
+            "xga6mpmplv.skadnetwork",
+            "77y3x8wds4.skadnetwork",
+            "32z4fx6l9h.skadnetwork",
+            "a8cz6cu7e5.skadnetwork",
+            "mp6xlyr22a.skadnetwork",
+            "5l3tpt7t6e.skadnetwork",
+            "feyaarzu9v.skadnetwork",
+            "x44k69ngh6.skadnetwork",
+            "k6y4y55b64.skadnetwork",
+            "v9wttpbfk9.skadnetwork",
+            "294l99pt4k.skadnetwork",
+            "mj797d8u6f.skadnetwork",
+            "238da6jt44.skadnetwork",
+            "tl55sbb4fm.skadnetwork",
+            "w9q455wk68.skadnetwork",
+            "97r2b46745.skadnetwork",
+            "vhf287vqwu.skadnetwork",
+            "mqn7fxpca7.skadnetwork",
+            "v79kvwwj4g.skadnetwork",
+            "5tjdwbrq8w.skadnetwork",
+            "9nlqeag3gk.skadnetwork",
+            "f7s53z58qe.skadnetwork",
+            "prcb7njmu6.skadnetwork",
+            "lr83yxwka7.skadnetwork",
+            "zmvfpc5aq8.skadnetwork",
+            "k674qkevps.skadnetwork",
+            "pwa73g5rt2.skadnetwork",
+            "6yxyv74ff7.skadnetwork",
+            "5f5u5tfb26.skadnetwork",
+            "4w7y6s5ca2.skadnetwork",
+            "44jx6755aq.skadnetwork",
+            "5lm9lj6jb7.skadnetwork",
+            "f73kdq92p3.skadnetwork",
+            "5a6flpkh64.skadnetwork",
+            "g6gcrrvk4p.skadnetwork",
+            "m8dbw4sv7c.skadnetwork",
+            "wg4vff78zm.skadnetwork",
+            "glqzh8vgby.skadnetwork",
+            "24t9a8vw3c.skadnetwork",
+            "24zw6aqk47.skadnetwork",
+            "275upjj5gd.skadnetwork",
+            "3l6bd9hu43.skadnetwork",
+            "44n7hlldy6.skadnetwork",
+            "523jb4fst2.skadnetwork",
+            "52fl2v3hgk.skadnetwork",
+            "54nzkqm89y.skadnetwork",
+            "6964rsfnh4.skadnetwork",
+            "6g9af3uyq4.skadnetwork",
+            "6p4ks3rnbw.skadnetwork",
+            "6rd35atwn8.skadnetwork",
+            "6v7lgmsu45.skadnetwork",
+            "6xzpu9s2p8.skadnetwork",
+            "737z793b9f.skadnetwork",
+            "74b6s63p6l.skadnetwork",
+            "79pbpufp6p.skadnetwork",
+            "7fmhfwg9en.skadnetwork",
+            "7rz58n8ntl.skadnetwork",
+            "84993kbrcf.skadnetwork",
+            "87u5trcl3r.skadnetwork",
+            "89z7zv988g.skadnetwork",
+            "8m87ys6875.skadnetwork",
+            "9b89h5y424.skadnetwork",
+            "9vvzujtq5s.skadnetwork",
+            "a7xqa6mtl2.skadnetwork",
+            "apzhy3va96.skadnetwork",
+            "b9bk5wbcq9.skadnetwork",
+            "bvpn9ufa9b.skadnetwork",
+            "bxvub5ada5.skadnetwork",
+            "c3frkrj4fj.skadnetwork",
+            "cg4yq2srnc.skadnetwork",
+            "cj5566h2ga.skadnetwork",
+            "cs644xg564.skadnetwork",
+            "cwn433xbcr.skadnetwork",
+            "dbu4b84rxf.skadnetwork",
+            "dkc879ngq3.skadnetwork",
+            "dzg6xy7pwj.skadnetwork",
+            "ecpz2srf59.skadnetwork",
+            "ejvt5qm6ak.skadnetwork",
+            "f2zub97jtl.skadnetwork",
+            "fq6vru337s.skadnetwork",
+            "fz2k2k5tej.skadnetwork",
+            "g28c52eehv.skadnetwork",
+            "g2y4y55b64.skadnetwork",
+            "ggvn48r87g.skadnetwork",
+            "hb56zgv37p.skadnetwork",
+            "hdw39hrw9y.skadnetwork",
+            "kbmxgpxpgc.skadnetwork",
+            "krvm3zuq6h.skadnetwork",
+            "ln5gz23vtd.skadnetwork",
+            "m297p6643m.skadnetwork",
+            "m5mvw97r93.skadnetwork",
+            "mls7yz5dvl.skadnetwork",
+            "mtkv5xtk9e.skadnetwork",
+            "n38lu8286q.skadnetwork",
+            "ns5j362hk7.skadnetwork",
+            "pwdxu55a5a.skadnetwork",
+            "qqp299437r.skadnetwork",
+            "qu637u8glc.skadnetwork",
+            "qwpu75vrh2.skadnetwork",
+            "r45fhb6rf7.skadnetwork",
+            "rvh3l7un93.skadnetwork",
+            "rx5hdcabgc.skadnetwork",
+            "sczv5946wb.skadnetwork",
+            "su67r6k2v3.skadnetwork",
+            "t6d3zquu66.skadnetwork",
+            "tmhh9296z4.skadnetwork",
+            "u679fj5vs4.skadnetwork",
+            "vcra2ehyfk.skadnetwork",
+            "x5l83yy675.skadnetwork",
+            "x8uqf25wch.skadnetwork",
+            "xy9t38ct57.skadnetwork",
+            "y45688jllp.skadnetwork",
+            "y5ghdn5j9k.skadnetwork",
+            "z959bm4gru.skadnetwork",
+            "6lz2ygh3q6.adattributionkit",
+            "77y3x8wds4.adattributionkit",
+            "m2jqnlggk3.adattributionkit",
+            "pg7ctvrt6f.adattributionkit",
+            "raa6f494kr.adattributionkit",
+            "thzdn4h5nc.adattributionkit"
+          ]
+        }
+      ],
+      "react-native-appsflyer",
+      "./plugins/withGameCenter",
+      [
+        "./plugins/withPlayGamesServices",
+        {
+          "playGamesAppId": "REPLACE_WITH_PLAY_CONSOLE_APP_ID"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "extraPods": [
+              {
+                "name": "GoogleMobileAdsMediationUnity"
+              },
+              {
+                "name": "GoogleMobileAdsMediationVungle"
+              }
+            ]
+          }
+        }
+      ],
+      "./plugins/withAdMobMediation",
+      [
+        "./plugins/withRemoveAndroidPermissions",
+        ["android.permission.RECORD_AUDIO"]
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "owner": "durn-studio",
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_WITH_EAS_PROJECT_ID"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "REPLACE_WITH_EAS_UPDATES_URL"
+    }
+  }
+}

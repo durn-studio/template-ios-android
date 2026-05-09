@@ -1,0 +1,50 @@
+Expanding this to international themes is exactly how you turn a good game into a global hit. Localizing your themes gives players in different regions something instantly recognizable to connect with, which massively boosts your app store retention. 
+
+For both of these new themes, we will stick strictly to the **"Box Ratio Rule"** you and your team are using: Tier 1 is tiny, and Tier 12 is an absolute unit that takes up 60-70% of the screen.
+
+Here are the 12-item hierarchies for **Mexico** and **Europe**, blending food, culture, and landmarks.
+
+---
+
+### Theme 4: Viva México!
+* **Art Style:** Vibrant, festive, and colorful. A lot of bright greens, reds, and golds. 
+* **The Vibe:** A celebration of Mexican culture, ending with one of the most perfectly shaped "Suika" items possible—a giant stone calendar.
+
+| Tier / Level | Icon (Satirical Concept) | Potential Visual Image Description |
+| :--- | :--- | :--- |
+| **1 (Smallest)** | **The Spicy Chili** | A tiny, angry-looking green Jalapeño pepper with a little flame on top. |
+| **2** | **The Street Taco** | A classic Al Pastor taco with a slice of pineapple and a smiling face. |
+| **3** | **The Guacamole Bowl** | A traditional stone *molcajete* filled with bright green guac and a single tortilla chip stuck in it. |
+| **4** | **The Axolotl** | A cute, pink, chubby Axolotl ("water dog") floating in a tiny bubble of water. |
+| **5** | **The Party Piñata** | A colorful, star-shaped paper piñata that looks like it's bursting with candy. |
+| **6** | **The Lucha Mask** | A shiny silver or bright blue *Lucha Libre* wrestling mask with an intimidating (but funny) expression. |
+| **7** | **The Mariachi Hat** | A massive, embroidered Sombrero. (The hat is so wide it naturally forces the physics circle to be larger). |
+| **8** | **The Painter** | A caricature of a Frida Kahlo lookalike with her iconic unibrow, holding a tiny paintbrush and a monkey on her shoulder. |
+| **9** | **The Angel of Independence** | The golden *El Ángel* statue, shining brightly, wrapped in a circular golden aura. |
+| **10** | **The Smoking Volcano** | Popocatépetl, a snowy volcano shaped into a sphere, puffing out a cloud of cartoon ash. |
+| **11** | **The Great Pyramid** | El Castillo (Chichen Itza), viewed from a slight angle so the massive stone steps fill the circle. |
+| **12 (Largest)** | **The Sun Stone** | **The Aztec Calendar Stone.** *This is the perfect Suika final item.* It is already a giant, intricately carved circle. At 70% screen width, it will look heavy, ancient, and deeply satisfying to unlock. |
+
+---
+
+### Theme 5: The Euro Tour
+* **Art Style:** A bit more elegant but still cartoonish. You want to capture the romanticized, postcard-version of Europe. 
+* **The Vibe:** A whirlwind backpacking trip across the continent. 
+
+| Tier / Level | Icon (Satirical Concept) | Potential Visual Image Description |
+| :--- | :--- | :--- |
+| **1 (Smallest)** | **The Tiny Espresso** | A miniature Italian espresso cup with a tiny wisp of steam. |
+| **2** | **The French Croissant** | A flaky, buttery crescent roll with a little French mustache. |
+| **3** | **The Bavarian Pretzel** | A thick German pretzel with chunky salt crystals on it. |
+| **4** | **The Red Phone Box** | The classic London telephone booth, slightly squashed and cartoonish. |
+| **5** | **The Venetian Gondola** | A curved black boat with a striped-shirt gondolier singing loudly. |
+| **6** | **The Cuckoo Clock** | A wooden Swiss clock with a tiny, angry mechanical bird popping out. |
+| **7** | **The Royal Guard** | A caricature of a British Queen's Guard where the fuzzy black bearskin hat makes up 80% of the circle. |
+| **8** | **The Masterpiece** | A parody of the *Mona Lisa* face inside a circular wooden museum frame, giving a very suspicious side-eye. |
+| **9** | **The Leaning Tower** | The Tower of Pisa, but it's leaning so hard it has to be bent to fit inside the physics circle. |
+| **10** | **The Eiffel Tower** | A sparkling Eiffel Tower at night. To fit the circle, it’s wrapped in a "snow globe" style bubble of fireworks. |
+| **11** | **The Matterhorn** | A massive, jagged, snowy Swiss Alps mountain peak. It looks cold and heavy. |
+| **12 (Largest)** | **The Colosseum** | **The Roman Colosseum, viewed from a top-down, bird's-eye angle.** From the top, the Colosseum is a giant, broken oval. Filling 70% of the screen, players will literally see tiny gladiator fights happening inside the arena of this massive final tier! |
+
+### A Quick Dev Note on the Colosseum (Tier 12):
+Because the Colosseum from a top-down view is slightly oval-shaped rather than a perfect circle, remind your developer to make sure the **physics hitbox remains a perfect circle**, even if the art has slight transparent edges. In a Suika game, if the final object isn't perfectly round, it won't roll smoothly, which can ruin the satisfying physics of the endgame!

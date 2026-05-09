@@ -1,0 +1,53 @@
+# Unity-generated folders + caches
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]ser[Ss]ettings/
+
+# Visual Studio / Rider IDE files Unity regenerates
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vs/
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Unity build outputs
+*.apk
+*.aab
+*.ipa
+*.app
+*.unitypackage
+
+# Crashlogs / asset import errors
+sysinfo.txt
+*.stackdump
+
+# Asset meta files for ignored folders (don't track meta for Library/, etc.)
+[Ll]ibrary.meta
+[Tt]emp.meta
+[Oo]bj.meta
+[Bb]uild.meta
+[Bb]uilds.meta
+[Ll]ogs.meta
+[Mm]emoryCaptures.meta
+[Uu]ser[Ss]ettings.meta

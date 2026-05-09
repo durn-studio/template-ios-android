@@ -1,0 +1,1292 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "5XYms-XKZN7xU-00Q6axz"
+uri = "file://artifacts/fruit-clash/assets/images/icon.png"
+type = "image"
+title = "fruit clash app icon"
+
+[[generated]]
+id = "K1FeemQcu5KDytUU7sPDX"
+uri = "file://artifacts/fruit-clash/assets/images/cherry.png"
+type = "image"
+title = "cherry fruit icon"
+
+[[generated]]
+id = "sBuBE1g2rgOmMYbfTyblh"
+uri = "file://artifacts/fruit-clash/assets/images/apple.png"
+type = "image"
+title = "apple fruit icon"
+
+[[generated]]
+id = "AQmfk3M_fnB59eOFiFPnO"
+uri = "file://artifacts/fruit-clash/assets/images/banana.png"
+type = "image"
+title = "banana fruit icon"
+
+[[generated]]
+id = "OiMEjHgtnNy5E2DRKd8OV"
+uri = "file://artifacts/fruit-clash/assets/images/grape.png"
+type = "image"
+title = "grape fruit icon"
+
+[[generated]]
+id = "SlI6-jkYv05VT9wvKbNaX"
+uri = "file://artifacts/fruit-clash/assets/images/orange.png"
+type = "image"
+title = "orange fruit icon"
+
+[[generated]]
+id = "jpFbl4lME1zwFwySYuLQ9"
+uri = "file://artifacts/fruit-clash/assets/images/strawberry.png"
+type = "image"
+title = "strawberry fruit icon"
+
+[[generated]]
+id = "BfpAPMwOhFduSQR6YzRIl"
+uri = "file://artifacts/fruit-clash/assets/images/watermelon.png"
+type = "image"
+title = "watermelon fruit icon"
+
+[[generated]]
+id = "EIsvxsdfDRFh3_LNj8rtw"
+uri = "file://artifacts/fruit-clash/assets/images/melon.png"
+type = "image"
+title = "melon fruit icon"
+
+[[generated]]
+id = "L6Ltj-mvFS2bruQnvK0MP"
+uri = "file://artifacts/fruit-clash/assets/images/pineapple.png"
+type = "image"
+title = "pineapple fruit icon"
+
+[[generated]]
+id = "5hUiNBmaG2urppj7JYUV2"
+uri = "file://artifacts/fruit-clash/assets/images/map-bg.png"
+type = "image"
+title = "Football stadium aerial view background"
+
+[[generated]]
+id = "16Sz9b72g-_ilFJkBnzC8"
+uri = "file://artifacts/fruit-clash/assets/images/yamal.png"
+type = "image"
+title = "Yamal caricature"
+
+[[generated]]
+id = "bZXLGGM68SIptCsLQwRgb"
+uri = "file://artifacts/fruit-clash/assets/images/vinicius.png"
+type = "image"
+title = "Vinicius caricature"
+
+[[generated]]
+id = "TIQq1_xVhAQOKxupvUXKr"
+uri = "file://artifacts/fruit-clash/assets/images/neuer.png"
+type = "image"
+title = "Neuer caricature"
+
+[[generated]]
+id = "qCzWowO87saME6ads_dws"
+uri = "file://artifacts/fruit-clash/assets/images/valderrama.png"
+type = "image"
+title = "Valderrama caricature"
+
+[[generated]]
+id = "jlnHX7yCL8y3ajHN_e35C"
+uri = "file://artifacts/fruit-clash/assets/images/neymar.png"
+type = "image"
+title = "Neymar caricature"
+
+[[generated]]
+id = "l960KbRsd7E9HsMix5rP2"
+uri = "file://artifacts/fruit-clash/assets/images/mbappe.png"
+type = "image"
+title = "Mbappé caricature"
+
+[[generated]]
+id = "NfREdSlA-VTVsWFn3tF7k"
+uri = "file://artifacts/fruit-clash/assets/images/ronaldinho.png"
+type = "image"
+title = "Ronaldinho caricature"
+
+[[generated]]
+id = "jhCIFu-czurgr5RyOW4l4"
+uri = "file://artifacts/fruit-clash/assets/images/cristiano.png"
+type = "image"
+title = "CR7 caricature"
+
+[[generated]]
+id = "Ge6ZTIGKHuhLGx-5pmqsg"
+uri = "file://artifacts/fruit-clash/assets/images/messi.png"
+type = "image"
+title = "Messi GOAT caricature"
+
+[[generated]]
+id = "f9ASwd468iC-HhHCrovHS"
+uri = "file://artifacts/fruit-clash/assets/images/pedri.png"
+type = "image"
+title = "Pedri caricature"
+
+[[generated]]
+id = "OsZwK3CjtW_a5-IiYhARC"
+uri = "file://artifacts/fruit-clash/assets/images/zidane.png"
+type = "image"
+title = "Zidane caricature"
+
+[[generated]]
+id = "SeubXfRYirdUK37AewXvM"
+uri = "file://artifacts/fruit-clash/assets/images/maradona.png"
+type = "image"
+title = "Maradona caricature"
+
+[[generated]]
+id = "bDIgPdIvMBy5OzorihjmQ"
+uri = "file://artifacts/fruit-clash/assets/images/player_esp_joven.png"
+type = "image"
+title = "Superstars El Joven face"
+
+[[generated]]
+id = "2y1MWC1wXXCsBtShbevV7"
+uri = "file://artifacts/fruit-clash/assets/images/player_esp_mago.png"
+type = "image"
+title = "Superstars El Mago face"
+
+[[generated]]
+id = "WjoaKHBUvSTvTECtZ5IfC"
+uri = "file://artifacts/fruit-clash/assets/images/player_bra_samba.png"
+type = "image"
+title = "Superstars O Samba face"
+
+[[generated]]
+id = "vvksJCOJq4B8994XuBgzk"
+uri = "file://artifacts/fruit-clash/assets/images/player_fra_lightning.png"
+type = "image"
+title = "Superstars La Flèche face"
+
+[[generated]]
+id = "rE4cpNDStxmXwlcCivxq_"
+uri = "file://artifacts/fruit-clash/assets/images/player_ger_wall.png"
+type = "image"
+title = "Superstars Die Mauer face"
+
+[[generated]]
+id = "S-eBDAcmy5Q07l5e9TZVr"
+uri = "file://artifacts/fruit-clash/assets/images/player_bra_artista.png"
+type = "image"
+title = "Superstars O Artista face"
+
+[[generated]]
+id = "KehGkypjx9S31N_ndFwHk"
+uri = "file://artifacts/fruit-clash/assets/images/player_col_peludo.png"
+type = "image"
+title = "Superstars El Peludo face"
+
+[[generated]]
+id = "b4vx16MKQk9oLdzgXAh8G"
+uri = "file://artifacts/fruit-clash/assets/images/player_bra_bruxo.png"
+type = "image"
+title = "Superstars O Bruxo face"
+
+[[generated]]
+id = "uGREzXRkmJC0ckdksen7c"
+uri = "file://artifacts/fruit-clash/assets/images/player_fra_maestro.png"
+type = "image"
+title = "Superstars Le Maestro face"
+
+[[generated]]
+id = "JksKy2k2L76mwi0DyL2dB"
+uri = "file://artifacts/fruit-clash/assets/images/player_arg_pibe.png"
+type = "image"
+title = "Superstars El Pibe face"
+
+[[generated]]
+id = "OLiYG94FrgKi2wFGJmBqI"
+uri = "file://artifacts/fruit-clash/assets/images/player_por_fenomeno.png"
+type = "image"
+title = "Superstars O Fenômeno face"
+
+[[generated]]
+id = "up5t-CrudUGZKCGsbRzX4"
+uri = "file://artifacts/fruit-clash/assets/images/player_arg_pulga.png"
+type = "image"
+title = "Superstars La Pulga face"
+
+[[generated]]
+id = "OGq9Vo2YCDFB7thYoLkzr"
+uri = "file://artifacts/fruit-clash/assets/images/bra_01.png"
+type = "image"
+title = "BRA1 Endrick baby face"
+
+[[generated]]
+id = "q8Ckggj8MlAglxlKkdtYS"
+uri = "file://artifacts/fruit-clash/assets/images/bra_02.png"
+type = "image"
+title = "BRA2 Bruno composed maestro"
+
+[[generated]]
+id = "6rfXtx-B0W6cCOwLVqt4w"
+uri = "file://artifacts/fruit-clash/assets/images/bra_03.png"
+type = "image"
+title = "BRA3 Marquinhos captain"
+
+[[generated]]
+id = "EudqZ2DVceWIuYXf4MLuZ"
+uri = "file://artifacts/fruit-clash/assets/images/bra_04.png"
+type = "image"
+title = "BRA4 Raphinha warrior rage"
+
+[[generated]]
+id = "4bdItduwAyHCIOsziPxjx"
+uri = "file://artifacts/fruit-clash/assets/images/bra_05.png"
+type = "image"
+title = "BRA5 Neymar mohawk tears"
+
+[[generated]]
+id = "4h9IQkf9CM7m5y4ze_Shb"
+uri = "file://artifacts/fruit-clash/assets/images/bra_06.png"
+type = "image"
+title = "BRA6 Vinicius speed demon"
+
+[[generated]]
+id = "i11PENfgtBp38VhgbfoO_"
+uri = "file://artifacts/fruit-clash/assets/images/bra_07.png"
+type = "image"
+title = "BRA7 Cafu huge smile trophy"
+
+[[generated]]
+id = "nwDNijIpFtbIns4fOB4U2"
+uri = "file://artifacts/fruit-clash/assets/images/bra_08.png"
+type = "image"
+title = "BRA8 Garrincha crooked legs"
+
+[[generated]]
+id = "SHZlhNBND55N0eDu57SHi"
+uri = "file://artifacts/fruit-clash/assets/images/bra_09.png"
+type = "image"
+title = "BRA9 Roberto Carlos thick thighs"
+
+[[generated]]
+id = "nlj6CmPYA2SAvAX10-oMp"
+uri = "file://artifacts/fruit-clash/assets/images/bra_10.png"
+type = "image"
+title = "BRA10 Ronaldinho gap teeth grin"
+
+[[generated]]
+id = "6LBcQaqO3SRxQZmqQrw0x"
+uri = "file://artifacts/fruit-clash/assets/images/bra_11.png"
+type = "image"
+title = "BRA11 Ronaldo triangle hair"
+
+[[generated]]
+id = "2tXnXKnecdvUIv4UMAZKz"
+uri = "file://artifacts/fruit-clash/assets/images/bra_12.png"
+type = "image"
+title = "BRA12 Pelé crown GOAT king"
+
+[[generated]]
+id = "HT1DHbsqzlhLunlGZ3tcZ"
+uri = "file://artifacts/fruit-clash/assets/images/arg_01.png"
+type = "image"
+title = "ARG El Araña face"
+
+[[generated]]
+id = "lgCZVqOP_n_g9oTnhCB_0"
+uri = "file://artifacts/fruit-clash/assets/images/arg_02.png"
+type = "image"
+title = "ARG El Toro face"
+
+[[generated]]
+id = "Br6LcQwClSOthkfu7qZSB"
+uri = "file://artifacts/fruit-clash/assets/images/arg_03.png"
+type = "image"
+title = "ARG El Dibu face"
+
+[[generated]]
+id = "w2g9aXPmVSqbRygjvnhEI"
+uri = "file://artifacts/fruit-clash/assets/images/arg_04.png"
+type = "image"
+title = "ARG La Joya face"
+
+[[generated]]
+id = "S-m0XWLjqYjnB-EX0Kq8q"
+uri = "file://artifacts/fruit-clash/assets/images/arg_05.png"
+type = "image"
+title = "ARG El Ángel face"
+
+[[generated]]
+id = "4eJJ3LbGKiCtojqd5Opov"
+uri = "file://artifacts/fruit-clash/assets/images/arg_06.png"
+type = "image"
+title = "ARG El Matador face"
+
+[[generated]]
+id = "C99dqRCww9ucQC2LsErsa"
+uri = "file://artifacts/fruit-clash/assets/images/arg_07.png"
+type = "image"
+title = "ARG El Burrito face"
+
+[[generated]]
+id = "gScfXVR0LsG8EruCdMfDV"
+uri = "file://artifacts/fruit-clash/assets/images/arg_08.png"
+type = "image"
+title = "ARG El Caudillo face"
+
+[[generated]]
+id = "wSvnfniA_DozLkrv0oK9s"
+uri = "file://artifacts/fruit-clash/assets/images/arg_09.png"
+type = "image"
+title = "ARG El Flaco face"
+
+[[generated]]
+id = "R5xKzOokXWkDkpNSowbCT"
+uri = "file://artifacts/fruit-clash/assets/images/arg_10.png"
+type = "image"
+title = "ARG El Loco face"
+
+[[generated]]
+id = "jhfedw4EdpR7mNBGI3LDJ"
+uri = "file://artifacts/fruit-clash/assets/images/arg_11.png"
+type = "image"
+title = "ARG El Diego face"
+
+[[generated]]
+id = "j8HI6uQHOK7apSQ0qYcYy"
+uri = "file://artifacts/fruit-clash/assets/images/arg_12.png"
+type = "image"
+title = "ARG La Pulga face"
+
+[[generated]]
+id = "ygSgYQBX3FstBHxxyoc4T"
+uri = "file://artifacts/fruit-clash/assets/images/esp_01.png"
+type = "image"
+title = "ESP El Joven face"
+
+[[generated]]
+id = "XarVEl5_6LOGim6OsfMcK"
+uri = "file://artifacts/fruit-clash/assets/images/esp_02.png"
+type = "image"
+title = "ESP El Mago face"
+
+[[generated]]
+id = "USORGlNQUA-GbHABy8ZxI"
+uri = "file://artifacts/fruit-clash/assets/images/esp_03.png"
+type = "image"
+title = "ESP El Cerebro face"
+
+[[generated]]
+id = "48YWNnxqbUGdBAuBO6FpP"
+uri = "file://artifacts/fruit-clash/assets/images/esp_04.png"
+type = "image"
+title = "ESP El Tanque face"
+
+[[generated]]
+id = "ePoaqbPl2rA6YxVVDb_NJ"
+uri = "file://artifacts/fruit-clash/assets/images/esp_05.png"
+type = "image"
+title = "ESP El Ilusionista face"
+
+[[generated]]
+id = "2x2LWXxwwtI_nDQp69vpC"
+uri = "file://artifacts/fruit-clash/assets/images/esp_06.png"
+type = "image"
+title = "ESP El Arquitecto face"
+
+[[generated]]
+id = "4Qz2N6nC0Eh1r7eDGzP9Z"
+uri = "file://artifacts/fruit-clash/assets/images/esp_07.png"
+type = "image"
+title = "ESP El Niño face"
+
+[[generated]]
+id = "pu7fyNbLykBb0h3z3yEA0"
+uri = "file://artifacts/fruit-clash/assets/images/esp_08.png"
+type = "image"
+title = "ESP San Iker face"
+
+[[generated]]
+id = "ZBHi4F-lL1xsSaO4PCQK3"
+uri = "file://artifacts/fruit-clash/assets/images/esp_09.png"
+type = "image"
+title = "ESP El Muro face"
+
+[[generated]]
+id = "ljGz1JvOj3PGfxBmVy4M-"
+uri = "file://artifacts/fruit-clash/assets/images/esp_10.png"
+type = "image"
+title = "ESP La Saeta face"
+
+[[generated]]
+id = "nJz_dJMd7egQZ9lnhYR7a"
+uri = "file://artifacts/fruit-clash/assets/images/esp_11.png"
+type = "image"
+title = "ESP El Zorro face"
+
+[[generated]]
+id = "1SGfj6oPOvnNHIvmScAe5"
+uri = "file://artifacts/fruit-clash/assets/images/esp_12.png"
+type = "image"
+title = "ESP El Sabio face"
+
+[[generated]]
+id = "mnArvDlu4oDloDFlQC4HS"
+uri = "file://artifacts/fruit-clash/assets/images/fra_01.png"
+type = "image"
+title = "FRA La Flèche face"
+
+[[generated]]
+id = "lTgr4kcfrqj390QBREO_i"
+uri = "file://artifacts/fruit-clash/assets/images/fra_02.png"
+type = "image"
+title = "FRA Le Petit Prince face"
+
+[[generated]]
+id = "tD3M1w9aj-2rKZbHbbNYK"
+uri = "file://artifacts/fruit-clash/assets/images/fra_03.png"
+type = "image"
+title = "FRA Le Cerveau face"
+
+[[generated]]
+id = "POCLH8X9VPd-aENZwmrYu"
+uri = "file://artifacts/fruit-clash/assets/images/fra_04.png"
+type = "image"
+title = "FRA Le Patron face"
+
+[[generated]]
+id = "gs59U2Mm_Vl67gdiiIAPX"
+uri = "file://artifacts/fruit-clash/assets/images/fra_05.png"
+type = "image"
+title = "FRA Le Roi face"
+
+[[generated]]
+id = "tK3DZd8cXp24_BTzDI99h"
+uri = "file://artifacts/fruit-clash/assets/images/fra_06.png"
+type = "image"
+title = "FRA L'Artiste face"
+
+[[generated]]
+id = "woMKod6K1IEbN0EADzdL7"
+uri = "file://artifacts/fruit-clash/assets/images/fra_07.png"
+type = "image"
+title = "FRA Le Roc face"
+
+[[generated]]
+id = "bjKl-qwkmWXLn0Ri_BE2O"
+uri = "file://artifacts/fruit-clash/assets/images/fra_08.png"
+type = "image"
+title = "FRA Le Canon face"
+
+[[generated]]
+id = "3oUEnBww0Dl2PwD0ay9UF"
+uri = "file://artifacts/fruit-clash/assets/images/fra_09.png"
+type = "image"
+title = "FRA Le Capitaine face"
+
+[[generated]]
+id = "OTjgZ3R3KUqbc6gql630L"
+uri = "file://artifacts/fruit-clash/assets/images/fra_10.png"
+type = "image"
+title = "FRA Le Génie face"
+
+[[generated]]
+id = "l34FMSEgFj8wMgy7ce_6q"
+uri = "file://artifacts/fruit-clash/assets/images/fra_11.png"
+type = "image"
+title = "FRA Le Maestro face"
+
+[[generated]]
+id = "uJYuTmJ5yeMUGCEe8ytNS"
+uri = "file://artifacts/fruit-clash/assets/images/fra_12.png"
+type = "image"
+title = "FRA L'Empereur face"
+
+[[generated]]
+id = "X0xppi-XiFHgvChwtA7FM"
+uri = "file://artifacts/fruit-clash/assets/images/ger_01.png"
+type = "image"
+title = "GER Der Junge face"
+
+[[generated]]
+id = "JYueg3W1X6wQz6P81I8so"
+uri = "file://artifacts/fruit-clash/assets/images/ger_02.png"
+type = "image"
+title = "GER Die Mauer face"
+
+[[generated]]
+id = "9_WhCokKjXsj3qXlHx9kc"
+uri = "file://artifacts/fruit-clash/assets/images/ger_03.png"
+type = "image"
+title = "GER Der Bomber face"
+
+[[generated]]
+id = "ZkoZnZyPRc-s9EXZ1Ntn7"
+uri = "file://artifacts/fruit-clash/assets/images/ger_04.png"
+type = "image"
+title = "GER Der Stratege face"
+
+[[generated]]
+id = "DPxhGlnwZ_1-iBk0exOzv"
+uri = "file://artifacts/fruit-clash/assets/images/ger_05.png"
+type = "image"
+title = "GER Der Flitzer face"
+
+[[generated]]
+id = "ePxjnxVHHGTMbmMx81CbQ"
+uri = "file://artifacts/fruit-clash/assets/images/ger_06.png"
+type = "image"
+title = "GER Der Stahl face"
+
+[[generated]]
+id = "cmSaLRwR0F0k6TO2icEpr"
+uri = "file://artifacts/fruit-clash/assets/images/ger_07.png"
+type = "image"
+title = "GER Der Titan face"
+
+[[generated]]
+id = "KAEJ1Xhd-XvKlI1abuEex"
+uri = "file://artifacts/fruit-clash/assets/images/ger_08.png"
+type = "image"
+title = "GER Das Dynamit face"
+
+[[generated]]
+id = "zkQsWdJy_y0VfOQ72SPks"
+uri = "file://artifacts/fruit-clash/assets/images/ger_09.png"
+type = "image"
+title = "GER Der Libero face"
+
+[[generated]]
+id = "OGfV7pmEGAgp5NEKMUEFT"
+uri = "file://artifacts/fruit-clash/assets/images/ger_10.png"
+type = "image"
+title = "GER Der Klinsi face"
+
+[[generated]]
+id = "S7BYgtgCKwb8txl0tbWBN"
+uri = "file://artifacts/fruit-clash/assets/images/ger_11.png"
+type = "image"
+title = "GER Der Panzer face"
+
+[[generated]]
+id = "OTW0ML1iwi4DAetW0sfTs"
+uri = "file://artifacts/fruit-clash/assets/images/ger_12.png"
+type = "image"
+title = "GER Der Kaiser face"
+
+[[generated]]
+id = "zmyITbxtvn8hE_hRKmDOJ"
+uri = "file://artifacts/fruit-clash/assets/images/eng_01.png"
+type = "image"
+title = "ENG The Bulldog face"
+
+[[generated]]
+id = "iRCW3skyldtn3Whlrudyq"
+uri = "file://artifacts/fruit-clash/assets/images/eng_02.png"
+type = "image"
+title = "ENG The Fox face"
+
+[[generated]]
+id = "aLGYiRqgNWX8cGVefHkNW"
+uri = "file://artifacts/fruit-clash/assets/images/eng_03.png"
+type = "image"
+title = "ENG The Magician face"
+
+[[generated]]
+id = "357YH7vQ61CecBviEXorA"
+uri = "file://artifacts/fruit-clash/assets/images/eng_04.png"
+type = "image"
+title = "ENG The Wall face"
+
+[[generated]]
+id = "-wE77o1BhGA5PhS018cG8"
+uri = "file://artifacts/fruit-clash/assets/images/eng_05.png"
+type = "image"
+title = "ENG Sir Goal face"
+
+[[generated]]
+id = "sJmQfoKnZ3AC01x2sw6kc"
+uri = "file://artifacts/fruit-clash/assets/images/eng_06.png"
+type = "image"
+title = "ENG The Captain face"
+
+[[generated]]
+id = "1Aa2jGU-feT9R00N1YyVR"
+uri = "file://artifacts/fruit-clash/assets/images/eng_07.png"
+type = "image"
+title = "ENG The Golden Boy face"
+
+[[generated]]
+id = "UUvxYZVRA7XgbpRsdynCG"
+uri = "file://artifacts/fruit-clash/assets/images/eng_08.png"
+type = "image"
+title = "ENG The Tank face"
+
+[[generated]]
+id = "mBZ1BFRuTb_ksPhvIlsTU"
+uri = "file://artifacts/fruit-clash/assets/images/eng_09.png"
+type = "image"
+title = "ENG The King face"
+
+[[generated]]
+id = "BsV9SuvZ7SMofrINMeVmx"
+uri = "file://artifacts/fruit-clash/assets/images/eng_10.png"
+type = "image"
+title = "ENG The Rocket face"
+
+[[generated]]
+id = "EbyhwNaCDoxnhkX-p8Zkr"
+uri = "file://artifacts/fruit-clash/assets/images/eng_11.png"
+type = "image"
+title = "ENG The Legend face"
+
+[[generated]]
+id = "7N2vgvpFFD0hfli0VvqLH"
+uri = "file://artifacts/fruit-clash/assets/images/eng_12.png"
+type = "image"
+title = "ENG The Icon face"
+
+[[generated]]
+id = "FasGyip51HMECwgLKzoS1"
+uri = "file://artifacts/fruit-clash/assets/images/por_01.png"
+type = "image"
+title = "POR O Lobo face"
+
+[[generated]]
+id = "2SZUUjL4GBODQLTQphE9d"
+uri = "file://artifacts/fruit-clash/assets/images/por_02.png"
+type = "image"
+title = "POR A Pantera face"
+
+[[generated]]
+id = "3nFalKYhSBTKVR2bbMp7W"
+uri = "file://artifacts/fruit-clash/assets/images/por_03.png"
+type = "image"
+title = "POR O Mágico face"
+
+[[generated]]
+id = "5Gl7AB9Cekv_5e2tlWhvu"
+uri = "file://artifacts/fruit-clash/assets/images/por_04.png"
+type = "image"
+title = "POR O Falcão face"
+
+[[generated]]
+id = "RFTfFpBqIjXsiiaBGMImp"
+uri = "file://artifacts/fruit-clash/assets/images/por_05.png"
+type = "image"
+title = "POR O Doutor face"
+
+[[generated]]
+id = "OpZ779J_2sBXuoQ1rxDPa"
+uri = "file://artifacts/fruit-clash/assets/images/por_06.png"
+type = "image"
+title = "POR A Águia face"
+
+[[generated]]
+id = "Fgt-R7UaLf5e0_fRfcFiH"
+uri = "file://artifacts/fruit-clash/assets/images/por_07.png"
+type = "image"
+title = "POR O Flecha face"
+
+[[generated]]
+id = "uQ_ZE5AddMGMssV3sqy3v"
+uri = "file://artifacts/fruit-clash/assets/images/por_08.png"
+type = "image"
+title = "POR O Maestro face"
+
+[[generated]]
+id = "1NjpESjinUevQaxQXIQq5"
+uri = "file://artifacts/fruit-clash/assets/images/por_09.png"
+type = "image"
+title = "POR A Fera face"
+
+[[generated]]
+id = "S2ppAV_Km-uzu_QzDneaK"
+uri = "file://artifacts/fruit-clash/assets/images/por_10.png"
+type = "image"
+title = "POR O Velho Mestre face"
+
+[[generated]]
+id = "NibI5dHybs_Po8HFsLOiq"
+uri = "file://artifacts/fruit-clash/assets/images/por_11.png"
+type = "image"
+title = "POR O Rei face"
+
+[[generated]]
+id = "XGuAF8alP7myMtBIZi2xw"
+uri = "file://artifacts/fruit-clash/assets/images/por_12.png"
+type = "image"
+title = "POR O Comandante face"
+
+[[generated]]
+id = "FIKTHn0kAC1jB7N5OV0eM"
+uri = "file://artifacts/fruit-clash/assets/images/col_01.png"
+type = "image"
+title = "COL El Tigre face"
+
+[[generated]]
+id = "0iXta95726PTMKHkMiJ9b"
+uri = "file://artifacts/fruit-clash/assets/images/col_02.png"
+type = "image"
+title = "COL El Escorpión face"
+
+[[generated]]
+id = "taqaq9ZxutUIUNC1wJAVa"
+uri = "file://artifacts/fruit-clash/assets/images/col_03.png"
+type = "image"
+title = "COL El Peludo face"
+
+[[generated]]
+id = "ljoFAWbLHNne-RQsFLrBn"
+uri = "file://artifacts/fruit-clash/assets/images/col_04.png"
+type = "image"
+title = "COL El Mágico face"
+
+[[generated]]
+id = "vfZqL-rAX5hBV0C2yKc3z"
+uri = "file://artifacts/fruit-clash/assets/images/col_05.png"
+type = "image"
+title = "COL El Bailarín face"
+
+[[generated]]
+id = "ru4G2602VDdofgrtxMpsP"
+uri = "file://artifacts/fruit-clash/assets/images/col_06.png"
+type = "image"
+title = "COL El Guerrero face"
+
+[[generated]]
+id = "3yGxQZWWxQdWvMpCgWaAr"
+uri = "file://artifacts/fruit-clash/assets/images/col_07.png"
+type = "image"
+title = "COL El Rayo face"
+
+[[generated]]
+id = "nMM_gsjZRS4zZVZm1TR6K"
+uri = "file://artifacts/fruit-clash/assets/images/col_08.png"
+type = "image"
+title = "COL El Genio face"
+
+[[generated]]
+id = "LjwpsqQt9bI_UMcHjf8Sr"
+uri = "file://artifacts/fruit-clash/assets/images/col_09.png"
+type = "image"
+title = "COL La Roca face"
+
+[[generated]]
+id = "Sa-QFSwze3v1Yc4OIcgxk"
+uri = "file://artifacts/fruit-clash/assets/images/col_10.png"
+type = "image"
+title = "COL El Príncipe face"
+
+[[generated]]
+id = "BfFUXUn73qXBoEe9EGSjg"
+uri = "file://artifacts/fruit-clash/assets/images/col_11.png"
+type = "image"
+title = "COL El Tren face"
+
+[[generated]]
+id = "fyMF0i1kN2qtZba7A1Ax2"
+uri = "file://artifacts/fruit-clash/assets/images/col_12.png"
+type = "image"
+title = "COL El Ídolo face"
+
+[[generated]]
+id = "doCxkPL8Q_-sjaIuvnnyV"
+uri = "file://artifacts/fruit-clash/assets/images/usa_01.png"
+type = "image"
+title = "USA1 Cookie"
+
+[[generated]]
+id = "pni21ke-N5TE7AMigOtxQ"
+uri = "file://artifacts/fruit-clash/assets/images/usa_02.png"
+type = "image"
+title = "USA2 Corn Cob"
+
+[[generated]]
+id = "7J6qitRnn8IM7yhe_aXsZ"
+uri = "file://artifacts/fruit-clash/assets/images/usa_03.png"
+type = "image"
+title = "USA3 Mac Cheese"
+
+[[generated]]
+id = "bReaZXFtegDMPa0kyHAbN"
+uri = "file://artifacts/fruit-clash/assets/images/usa_04.png"
+type = "image"
+title = "USA4 Hot Dog"
+
+[[generated]]
+id = "yalE37nMjZn9SKTEmcwMz"
+uri = "file://artifacts/fruit-clash/assets/images/usa_05.png"
+type = "image"
+title = "USA5 Donut"
+
+[[generated]]
+id = "hnzRryLeKJq9nrgk-luys"
+uri = "file://artifacts/fruit-clash/assets/images/usa_06.png"
+type = "image"
+title = "USA6 Pancakes"
+
+[[generated]]
+id = "9byjjxPkDsL8B4EXWmXUW"
+uri = "file://artifacts/fruit-clash/assets/images/usa_07.png"
+type = "image"
+title = "USA7 Drumstick"
+
+[[generated]]
+id = "Jn_4MFtgxadKjaWpWjPmM"
+uri = "file://artifacts/fruit-clash/assets/images/usa_08.png"
+type = "image"
+title = "USA8 Apple Pie"
+
+[[generated]]
+id = "CGQIqn2j-0KzUSEYy-4-4"
+uri = "file://artifacts/fruit-clash/assets/images/usa_09.png"
+type = "image"
+title = "USA9 BBQ Rib"
+
+[[generated]]
+id = "jVVglfd3CJtFFTcbnEK5E"
+uri = "file://artifacts/fruit-clash/assets/images/usa_10.png"
+type = "image"
+title = "USA10 Pizza Slice"
+
+[[generated]]
+id = "g7LkmBXtpALhv784leI6e"
+uri = "file://artifacts/fruit-clash/assets/images/usa_11.png"
+type = "image"
+title = "USA11 Milkshake"
+
+[[generated]]
+id = "jZskShxIU9icYqQq25ABa"
+uri = "file://artifacts/fruit-clash/assets/images/usa_12.png"
+type = "image"
+title = "USA12 Cheeseburger GOAT"
+
+[[generated]]
+id = "EgXt5pQDaho-KfyLjgbFi"
+uri = "file://artifacts/fruit-clash/assets/images/mex_01.png"
+type = "image"
+title = "MEX El Guerrero face"
+
+[[generated]]
+id = "YWJNAodKsY7pjiGg2AV9U"
+uri = "file://artifacts/fruit-clash/assets/images/mex_02.png"
+type = "image"
+title = "MEX El Místico face"
+
+[[generated]]
+id = "Gj2GDT69JJTXQqv-pkzeM"
+uri = "file://artifacts/fruit-clash/assets/images/mex_03.png"
+type = "image"
+title = "MEX El Azteca face"
+
+[[generated]]
+id = "TPZ2Bcyxu4RuKTdcCIKqW"
+uri = "file://artifacts/fruit-clash/assets/images/mex_04.png"
+type = "image"
+title = "MEX El Halcón face"
+
+[[generated]]
+id = "qFt1iqPqi4whAarZ7UmGx"
+uri = "file://artifacts/fruit-clash/assets/images/mex_05.png"
+type = "image"
+title = "MEX El Bravo face"
+
+[[generated]]
+id = "vjftpt-wU0HvZ-b5EanwW"
+uri = "file://artifacts/fruit-clash/assets/images/mex_06.png"
+type = "image"
+title = "MEX El Artista face"
+
+[[generated]]
+id = "KWXnYCGhh2ESM0YwJhfdt"
+uri = "file://artifacts/fruit-clash/assets/images/mex_07.png"
+type = "image"
+title = "MEX El Volcán face"
+
+[[generated]]
+id = "YgAFGPhGT7bQ7IPv-94n8"
+uri = "file://artifacts/fruit-clash/assets/images/mex_08.png"
+type = "image"
+title = "MEX El Chapulín face"
+
+[[generated]]
+id = "CzJE4AxR_VvbfpPHDYh9C"
+uri = "file://artifacts/fruit-clash/assets/images/mex_09.png"
+type = "image"
+title = "MEX El Capitán face"
+
+[[generated]]
+id = "W5bIC-5SqSyw3HlH5Nv_A"
+uri = "file://artifacts/fruit-clash/assets/images/mex_10.png"
+type = "image"
+title = "MEX El Gato face"
+
+[[generated]]
+id = "9xSTFcuQm25QuacohOLkz"
+uri = "file://artifacts/fruit-clash/assets/images/mex_11.png"
+type = "image"
+title = "MEX El Grande face"
+
+[[generated]]
+id = "VIkpAa1N22BQb2Cswa3-h"
+uri = "file://artifacts/fruit-clash/assets/images/mex_12.png"
+type = "image"
+title = "MEX El Dios face"
+
+[[generated]]
+id = "PQcU2VWuhkWjW9vkQHdAV"
+uri = "file://artifacts/fruit-clash/assets/images/hist_01.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "q1WmtrhfJ54Tn4chrdaCc"
+uri = "file://artifacts/fruit-clash/assets/images/hist_02.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "TD8S-7d2WIRjy7VwsHg4X"
+uri = "file://artifacts/fruit-clash/assets/images/hist_03.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "wK3cH4Jn2WsLWYzGSwy9B"
+uri = "file://artifacts/fruit-clash/assets/images/hist_04.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "kj_0KNCZlpFqCSFKcFVH3"
+uri = "file://artifacts/fruit-clash/assets/images/hist_05.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "i6TLSGTtbICnWyD-ADTu_"
+uri = "file://artifacts/fruit-clash/assets/images/hist_06.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Iqiv5JgaVfyzD9c-MR0P8"
+uri = "file://artifacts/fruit-clash/assets/images/hist_07.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "8XiA2nls297BSmCf7NA59"
+uri = "file://artifacts/fruit-clash/assets/images/hist_08.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "pwjtYDBwiqJJDvk8pSllq"
+uri = "file://artifacts/fruit-clash/assets/images/hist_09.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "DPqnzvg6ztb2i0v2M7Vwt"
+uri = "file://artifacts/fruit-clash/assets/images/hist_10.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "JC4qbRzscq3zPKMNab8MP"
+uri = "file://artifacts/fruit-clash/assets/images/hist_11.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "h62RRs83cJlYiw6sSCQVz"
+uri = "file://artifacts/fruit-clash/assets/images/hist_12.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "qsKfMQukNAOXjx337d8X5"
+uri = "file://artifacts/fruit-clash/assets/images/pop_01.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "JHCvpWLYz7Bb0KP-XE2-6"
+uri = "file://artifacts/fruit-clash/assets/images/pop_02.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "LFY-5YRV3_wCffJA3whTa"
+uri = "file://artifacts/fruit-clash/assets/images/pop_03.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ZjtrAdXFqkbVK6SAkqd8i"
+uri = "file://artifacts/fruit-clash/assets/images/pop_04.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "PEcI9GMXlzaJ7uhaDb_6Q"
+uri = "file://artifacts/fruit-clash/assets/images/pop_05.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "MpRIYYkPO3wcyvAnENcrb"
+uri = "file://artifacts/fruit-clash/assets/images/pop_06.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Agzo5-GjBl_hUfmQ9eOrF"
+uri = "file://artifacts/fruit-clash/assets/images/pop_07.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "xIPKqzyK09FpecF7kV125"
+uri = "file://artifacts/fruit-clash/assets/images/pop_08.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "xPkZGpJPTQ2OlbgqO1wHI"
+uri = "file://artifacts/fruit-clash/assets/images/pop_09.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "SiDj6Wsm4P3XABa33z9K4"
+uri = "file://artifacts/fruit-clash/assets/images/pop_10.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "4aVyEvPJgpDEGawKRhgVt"
+uri = "file://artifacts/fruit-clash/assets/images/pop_11.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "UB6Bciq4aoenFuwVkDagp"
+uri = "file://artifacts/fruit-clash/assets/images/pop_12.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ym-3QzOkoBQaNpaVBoRZz"
+uri = "file://artifacts/fruit-clash/assets/images/land_01.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "1Az7tLACljE4eWALBAyv-"
+uri = "file://artifacts/fruit-clash/assets/images/land_02.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "XhcrSBuyNLvQfodVjInG_"
+uri = "file://artifacts/fruit-clash/assets/images/land_03.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "xElkRjUjFLAbbFXWHqotr"
+uri = "file://artifacts/fruit-clash/assets/images/land_04.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "QCTUCW7hJxfHkRp1SNmP-"
+uri = "file://artifacts/fruit-clash/assets/images/land_05.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "f1T_XuLdGExj8J6crs-u3"
+uri = "file://artifacts/fruit-clash/assets/images/land_06.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "mEidGWkx5LRmRL5yIe00L"
+uri = "file://artifacts/fruit-clash/assets/images/land_07.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "5Eu2gOx2Sb2R_bFd7rg8C"
+uri = "file://artifacts/fruit-clash/assets/images/land_08.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "t6WGNwSZitHqMhF6NUKQr"
+uri = "file://artifacts/fruit-clash/assets/images/land_09.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ZqxNuvW4E-qe5tjxRW1jI"
+uri = "file://artifacts/fruit-clash/assets/images/land_10.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "MLGMbWW5DCIpWamlqzmRH"
+uri = "file://artifacts/fruit-clash/assets/images/land_11.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Ac4k6UR2q0xe6ZEeZnplF"
+uri = "file://artifacts/fruit-clash/assets/images/land_12.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "dlhPxFRmHzFXJT6HE8IhH"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_01.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "FLKVcj7vk2fprUQT_GdNC"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_02.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "o-xI7ipiQp3GS0RNA4Nq2"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_03.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "PqlcoY8FALVvUTWQ37nA0"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_04.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "k5Y3uR5uWyCH3WA_2qxo8"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_05.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "OoGFKwwBwJ2Z_j8aXc7YI"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_06.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "MGzR6W2twOZlNDydPem5J"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_07.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "NM7hQA7VMuJ_lu6F4s8fE"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_08.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "yfDZLEUN83Dsd_Ve_RB58"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_09.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Xy9vniB8yLHg5VVGYczCk"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_10.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "2gDhV4ojYPdGfmZWtHLBj"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_11.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "L3TxjiMYiCPDv7JHgr_SO"
+uri = "file://artifacts/fruit-clash/assets/images/mxc_12.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "B6zP99inSjBTp3V9LbY5m"
+uri = "file://artifacts/fruit-clash/assets/images/euro_01.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Wcf_meTckLavBGhSxkYTE"
+uri = "file://artifacts/fruit-clash/assets/images/euro_02.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "0YCTkr4FuXpXQ3ZzRUFZW"
+uri = "file://artifacts/fruit-clash/assets/images/euro_03.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "GiYuKTFOCLyE1cC2v73yV"
+uri = "file://artifacts/fruit-clash/assets/images/euro_04.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "x9hI8eml-i8RLTPSnw9Na"
+uri = "file://artifacts/fruit-clash/assets/images/euro_05.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "skbP_v65qrn-wxAkm5y_7"
+uri = "file://artifacts/fruit-clash/assets/images/euro_06.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "VDcIRbf6I85hyi2QqV-8T"
+uri = "file://artifacts/fruit-clash/assets/images/euro_07.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Vq_dsLhkYcEhmT_2XIpF2"
+uri = "file://artifacts/fruit-clash/assets/images/euro_08.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "CcaEGODa2briH-t45ZL7c"
+uri = "file://artifacts/fruit-clash/assets/images/euro_09.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "OkmI_I7Nu5qzJkb9yphXS"
+uri = "file://artifacts/fruit-clash/assets/images/euro_10.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "C-ePgUg6FMQjBbBhxhPEU"
+uri = "file://artifacts/fruit-clash/assets/images/euro_11.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "fe_CBWjYYLkJsoc--Wfcq"
+uri = "file://artifacts/fruit-clash/assets/images/euro_12.png"
+type = "image"
+title = "generated_image"

@@ -1,0 +1,24 @@
+{
+  "id": "world1-level10",
+  "worldId": "street_pitch",
+  "name": "Fortress",
+  "width": 16,
+  "height": 9,
+  "slingshot": { "x": 2, "y": 7 },
+  "goal": { "x": 14, "y": 6, "width": 2, "height": 3 },
+  "stars": { "one": 2800, "two": 5000, "three": 7500 },
+  "shotsAllowed": 4,
+  "blocks": [
+    { "shape": "box", "material": "container", "position": { "x": 9, "y": 8.0 }, "halfW": 0.4, "halfH": 1.0, "type": "static" },
+    { "shape": "box", "material": "container", "position": { "x": 9, "y": 5.5 }, "halfW": 0.4, "halfH": 1.0, "type": "static" },
+    { "shape": "box", "material": "wood", "position": { "x": 10, "y": 8.4 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "wood", "position": { "x": 10, "y": 7.2 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "cardboard", "position": { "x": 10, "y": 6.0 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "wood", "position": { "x": 11, "y": 8.4 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "tin", "position": { "x": 11, "y": 7.2 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "tin", "position": { "x": 11, "y": 6.0 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 10.5, "y": 5.0 }, "radius": 0.35 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 12.0, "y": 5.0 }, "radius": 0.35 },
+    { "shape": "box", "material": "wood", "position": { "x": 12.5, "y": 8.4 }, "halfW": 0.5, "halfH": 0.6 }
+  ]
+}

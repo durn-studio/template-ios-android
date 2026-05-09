@@ -1,0 +1,26 @@
+owever, moving to a physics engine introduces a classic set of bugs. When identical items are touching but refusing to merge, it’s almost always an issue with how your 2D physics engine (likely Matter.js or Box2D if you are using React Native) handles collision events.
+
+Here is exactly how to explain this bug to your developer and how they can fix it:
+
+1. The "Sleeping Bodies" Bug (Most Likely)
+To save battery and CPU on mobile phones, physics engines put objects to "sleep" when they stop moving.
+
+The Problem: If two identical food items come to a complete stop near each other (going to sleep) and then a third item gently pushes them together, the physics engine might not register it as a "new" collision because the bodies are "asleep."
+
+The Fix: Tell your developer to either increase the sleepThreshold so items stay awake longer, or ensure that any new collision in the container "wakes up" all surrounding bodies so the merge logic can fire.
+
+2. Checking onCollisionStart vs. onCollisionActive
+Physics engines usually have different types of event listeners for when objects touch.
+
+The Problem: If the developer only put the merging logic inside the onCollisionStart event, it only checks the exact millisecond they hit. If they bump, don't merge (maybe a third item was in the way), and then settle against each other seconds later, the event has already passed.
+
+The Fix: The developer needs to ensure the merge check is also happening inside onCollisionActive (or onCollisionStay), which continuously checks if two objects are resting against each other.
+
+3. Hitbox Mismatch
+Look closely at the faint colored circles around the food in your screenshot. Those are the "hitboxes" (the physical boundaries the code sees).
+
+The Problem: If the visual image of the cookie is slightly larger than the mathematical circle wrapping it, two cookies might look like they are touching on screen, but their invisible physics circles actually have a 1-pixel gap between them.
+
+The Fix: Have the developer turn on "Debug Draw" (which draws thick lines around the physics bodies) to verify that the mathematical circles are actually overlapping when they are supposed to.
+
+Bonus Catch for your Designer/Dev: Look at the text at the very bottom of your screen: "Drag to aim · Release to drop · Match same players to merge!" It looks like someone forgot to update the text when you switched from the football theme to the American Food theme!

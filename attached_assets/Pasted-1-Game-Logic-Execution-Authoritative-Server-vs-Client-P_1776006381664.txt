@@ -1,0 +1,34 @@
+1. Game Logic Execution: Authoritative Server vs. Client Prediction
+In the previous response, I mentioned validating moves on the Java server. However, waiting for a server response before updating the screen will make the game feel laggy and unplayable.
+
+The Missing Piece: You must implement Client-Side Prediction. The React Native frontend should instantly render the visual result of a fruit clash assuming the move is valid.
+
+Server Reconciliation: In the background, the move is sent to the Java Spring server. The server runs the exact same game logic to verify it. If the server detects an illegal move (due to lag, a glitch, or cheating), it sends a correction state back to the client, forcing the React Native app to "snap back" to the true server state.
+
+2. Audio and Haptics (Frontend)
+A fruit game feels completely dead without sound effects (squishing, slicing, explosions) and tactile feedback.
+
+Audio: You will need a library like expo-av to preload and play low-latency sound effects.
+
+Haptics: Use expo-haptics to trigger device vibrations when a user successfully matches fruits. iOS and Android handle haptics differently, but this library bridges that gap automatically.
+
+3. CI/CD: The True "Automatic" Deployment
+While I mentioned Expo Application Services (EAS) for building the apps, a professional setup requires a Continuous Integration/Continuous Deployment (CI/CD) pipeline so you aren't running builds manually from your laptop.
+
+GitHub Actions integration: You should set up a workflow where every time you push code to your main branch, a GitHub Action automatically triggers eas build and eas submit.
+
+Over-the-Air (OTA) Updates: Using expo-updates, you can push minor bug fixes, new levels, or new fruit assets directly to users' phones without them having to download a new version from the App Store or Google Play. (Note: You can only do this for JavaScript/Asset changes, not native code changes).
+
+4. Offline Mode and State Synchronization
+Players will play this on the subway or in areas with bad reception. If the app just crashes or fails to save without internet, they will uninstall it.
+
+Local Storage: Use a local database like WatermelonDB or AsyncStorage in React Native to temporarily save the player's high scores, unlocked levels, and inventory.
+
+Sync Queue: When the device comes back online, the app should automatically flush this queue, sending the pending data to your Java Spring REST APIs to update the master PostgreSQL database.
+
+5. Monetization and Authentication Infrastructure
+If you plan to make money or allow users to save their progress across devices, you need specialized infrastructure.
+
+In-App Purchases (IAP): Handling App Store and Google Play billing APIs manually is a nightmare. You should integrate RevenueCat, which provides a unified API for React Native to handle premium currencies (e.g., buying extra lives or power-ups).
+
+Social Logins: Instead of building a custom email/password system in Java, integrate Firebase Authentication or Supabase on the React Native side to handle "Sign in with Apple" and "Sign in with Google." You then pass the generated secure token to your Java backend.

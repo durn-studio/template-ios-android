@@ -1,0 +1,150 @@
+FOOTBALL MERGE GAME
+Player Character Art Direction & Developer Spec
+PuzzleVerse — Durn Studio UG
+Version 1.0 — April 2026
+CONFIDENTIAL
+1. Game concept & visual goal
+This is a Suika-style merge/drop game where players drop football player characters into a container. When two identical players collide, they merge into a higher-tier player. The game ends when characters stack above the danger line.
+The visual goal is to replicate the satisfying, polished feel of fruit/ball merge games but using stylized footballer caricatures with national team identities. Characters must be instantly recognizable at sizes as small as 36px while being funny, shareable, and legally safe.
+
+2. Art style definition
+2.1 Style: Chibi caricature
+All player characters use an exaggerated chibi/bobblehead style with the following proportions:
+Head-to-body ratio: Head is approximately 60% of total character height. Body is stubby and simplified.
+Proportions: Big round head, short thick neck (or no neck), small torso, stubby arms and legs.
+Features: Large expressive eyes, simplified nose, exaggerated mouth/expression. Signature physical traits are amplified (hairstyle, facial hair, headband, etc).
+Pose: Each character has one signature dynamic pose (running, celebrating, sliding, pointing, etc). The pose is baked into the sprite — not animated.
+Outline: 2-3px solid black outline around the entire character. This is critical for readability at small sizes.
+2.2 Color rules
+Palette per character: Maximum 5-6 colors (jersey primary, jersey secondary, skin tone, hair color, one accent). Flat colors, no gradients on the character itself.
+Skin tones: Use a simplified palette of 4-5 skin tones. Do not attempt photorealism.
+Jersey: Use the real national team primary and secondary colors. Jersey design is simplified but recognizable (stripes, sash, solid, etc).
+2.3 What to avoid
+No photorealistic faces or photo cutouts
+No gradients or shading on character bodies (flat color only)
+No thin lines — minimum stroke width is 2px at native resolution
+No small details that disappear at 36px (tattoos, subtle patterns, small accessories)
+No licensed logos, brand marks, or official FIFA/federation emblems
+2.4 Visual references
+For the illustrator/artist, these are the closest style references:
+Nintendo Mii characters — simplified but recognizable identity
+Stumble Guys character proportions — chibi body ratio
+Old-school Panini sticker art — caricature exaggeration level
+Suika Game fruits — the clean, bold, circular readability we want to achieve
+3. Character identity system (avoiding copyright)
+Characters are NOT named after real players. Each character represents a national team archetype with exaggerated traits that audiences will recognize without any explicit identification.
+3.1 Naming convention
+Each character gets:
+Display name: A fun nickname in the team’s language (e.g. “El Mago”, “Le Patron”, “O Rei”, “Der Kaiser”)
+Jersey number: Use a number associated with the archetype’s position/role, but not necessarily the exact number of any specific player
+Country code: 3-letter FIFA country code displayed below the character (BRA, FRA, ARG, etc)
+3.2 Recognizable traits (what makes it funny)
+The humor and virality come from exaggerating signature traits people associate with football culture. These are physical/behavioral stereotypes, not individual likenesses:
+
+
+NOTE: The above table is a starting set. The game needs a minimum of 8 characters for the merge chain (Tier 1 through Tier 8). Additional characters can be added as seasonal/event content during the World Cup.
+4. Tier system & size progression
+Characters grow in size with each merge tier. The size progression must feel dramatic — this is what creates the satisfying gameplay loop and the “oh wow” moment when you reach higher tiers.
+4.1 Size table
+
+
+4.2 Visual escalation per tier
+As tiers increase, the character itself should also visually escalate beyond just size:
+Tiers 1-2: Standard character, clean flat colors, thin or no ring.
+Tiers 3-4: Character gets a subtle glow behind them (colored aura matching national team primary). Star badge appears.
+Tiers 5-6: Ring pulses gently (CSS animation, ~2s cycle). Character expression becomes more intense/excited. Add particle effects (small stars/sparkles orbiting).
+Tiers 7-8: Full golden aura. Character pose becomes a celebration (arms up, fist pump). The GOAT tier (8) gets a special golden version of the character — entire palette shifts to gold/white. Trophy badge. This is THE screenshot moment.
+4.3 Ring color system
+The ring/glow around each character uses the national team’s PRIMARY color. This is critical for instant identification at small sizes:
+
+5. Asset specifications for developer
+5.1 Sprite format
+Format: PNG with transparent background
+Native resolution: 512x512px per character (will be scaled down in-game)
+Padding: Character should fill approximately 80% of the canvas, centered, with 10% padding on each side for the glow ring overlay
+Variations per character: Each character needs 1 base sprite. Tier visual escalation (glow, ring, badge, golden variant) is handled by the game engine, NOT baked into the sprite, EXCEPT for Tier 8 golden palette swap which is a separate sprite.
+5.2 File naming convention
+player_{country_code}_{archetype}_{variant}.png
+Examples:
+player_bra_samba_base.png
+player_bra_samba_gold.png (Tier 8 variant)
+player_fra_lightning_base.png
+player_fra_lightning_gold.png
+5.3 What the game engine handles (do NOT bake into sprites)
+Glow ring — rendered as a circular border/shadow around the sprite container
+Star/crown/trophy badges — overlaid as separate UI elements
+Pulsing animation — CSS/shader animation on the ring
+Merge particle effects — confetti, sparks, fireworks
+Screen shake, flash — game engine post-processing
+5.4 What IS baked into sprites
+Character body, head, hair, face, jersey, pose — everything that IS the character
+Black outline (2-3px at 512px native)
+Tier 8 golden palette swap (separate sprite file)
+6. Physics & collision notes for developer
+6.1 Collision shape
+Each character uses a CIRCLE collider regardless of the sprite shape. The collision circle diameter equals the tier diameter from Section 4.1. The sprite is rendered slightly larger than the collider (sprite = collider * 1.15) so characters visually overlap their physics boundary slightly, giving a “juicy” feel.
+6.2 Merge detection
+Two characters merge when:
+They are the SAME character (same country + archetype)
+Their collision circles overlap
+Neither is currently in a merge animation
+On merge: both characters are destroyed, a new character spawns at the midpoint between them, one tier higher. The spawn includes a brief scale-up animation (0 to 100% over ~200ms with an ease-out-back curve) and the tier-appropriate particle effect.
+6.3 Drop mechanic
+The player drags horizontally to aim, then releases to drop. The character falls with standard gravity. A thin vertical guide line shows the drop path. The “next” character preview appears in the top-right corner.
+6.4 Merge chain table
+The merge chain defines which character appears at each tier. This is the core progression:
+
+
+NOTE: The merge order is a design decision and can be adjusted for gameplay balance or to align with World Cup hype. Lower tiers should be less well-known teams, building up to the most popular/viral-worthy characters at the top.
+7. UI elements around the characters
+7.1 Country code label
+A 3-letter country code (FIFA standard) appears below each character:
+Font: Bold, sans-serif, ALL CAPS
+Size: 8px at Tier 1, scales proportionally up to 14px at Tier 8+
+Color: White with 70% opacity, or the national team primary color on dark backgrounds
+Position: Centered below the character sprite, 4px gap
+7.2 Tier badge
+Starting at Tier 3, a badge appears at the top-right of the character:
+Size: 16px diameter circle
+Background: National team primary color (Tiers 3-5), gold #FFD700 (Tiers 6-7), animated gold (Tier 8)
+Content: ★ (Tier 3), ★★ (Tier 4), ★★★ (Tier 5), Crown (Tier 6), Trophy (Tier 7), GOAT emoji/icon (Tier 8)
+7.3 Score display
+Top-center: Score in a pill-shaped container with a star icon. Color: gold (#FFD700) text on dark semi-transparent background. Each merge awards points equal to the resulting tier number squared (Tier 3 merge = 9 points, Tier 8 merge = 64 points).
+7.4 Next character preview
+Top-right: Shows the next character that will be dropped, at 60% scale, with a “NEXT” label above it in small caps.
+7.5 Danger line
+Horizontal dashed line near the top of the play area. Color: red with 40% opacity. Label: “DANGER” in small caps, positioned at the right end of the line. If any character’s center point stays above this line for more than 2 seconds, the game ends.
+8. Merge effects & juice
+These effects are what make the game feel as satisfying as Suika. Every merge should feel rewarding.
+8.1 Effect table by tier
+
+
+8.2 Haptic feedback (mobile)
+Tiers 1-3: Light impact feedback on merge
+Tiers 4-5: Medium impact feedback
+Tiers 6-7: Heavy impact + notification feedback
+Tier 8 (GOAT): Success notification pattern (triple buzz)
+8.3 Screenshot/share moment
+When a player achieves the GOAT merge (Tier 8), the game should:
+Pause gameplay for 2 seconds
+Show a celebratory overlay with the GOAT character at 200% size, centered
+Display the final score prominently
+Show a “Share” button that generates a screenshot/card with the score, the GOAT character, and game branding
+This share card is the primary viral mechanic — it needs to look amazing
+9. Asset deliverables checklist
+9.1 From illustrator/artist
+10-12 base character sprites (512x512 PNG, transparent bg)
+10-12 golden (Tier 8 GOAT) variant sprites
+Style guide sheet showing one character at all 8 tier sizes with effects
+Character turnaround is NOT needed (single pose only)
+9.2 From developer (game engine)
+Ring/glow rendering system (color, size, pulse per tier)
+Badge overlay system (stars, crown, trophy, GOAT)
+Particle effect system (puff, sparks, confetti, fireworks)
+Screen shake, flash, slow-mo for high-tier merges
+Share card generator for GOAT achievement
+Haptic feedback integration (iOS/Android)
+Sound effect triggers per tier
+
+10. Legal notes
+This game does NOT use any real player names, official likenesses, licensed team logos, or FIFA/federation trademarks. All characters are original satirical caricatures representing national team archetypes. National team jersey color combinations are not copyrightable. Character nicknames are generic football-culture terms, not trademarked player nicknames. This approach follows the same legal framework used by games like “Head Soccer”, “Retro Bowl”, and other successful football-themed games that use caricature/parody characters.

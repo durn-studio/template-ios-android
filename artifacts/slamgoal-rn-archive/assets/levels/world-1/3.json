@@ -1,0 +1,26 @@
+{
+  "id": "world1-level3",
+  "worldId": "street_pitch",
+  "name": "Tower",
+  "width": 16,
+  "height": 9,
+  "slingshot": { "x": 2, "y": 7 },
+  "goal": { "x": 14, "y": 6, "width": 2, "height": 3 },
+  "stars": { "one": 1800, "two": 3000, "three": 4200 },
+  "shotsAllowed": 3,
+  "blocks": [
+    { "shape": "box", "material": "wood", "position": { "x": 9, "y": 8.4 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "wood", "position": { "x": 9, "y": 7.2 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "cardboard", "position": { "x": 9, "y": 6.0 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "cardboard", "position": { "x": 9, "y": 4.8 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "wood", "position": { "x": 11, "y": 8.4 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "wood", "position": { "x": 11, "y": 7.2 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "cardboard", "position": { "x": 11, "y": 6.0 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "cardboard", "position": { "x": 11, "y": 4.8 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "tin", "position": { "x": 10, "y": 4.0 }, "halfW": 1.2, "halfH": 0.2 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 9.3, "y": 3.4 }, "radius": 0.35 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 10.5, "y": 3.4 }, "radius": 0.35 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 11.7, "y": 3.4 }, "radius": 0.35 },
+    { "shape": "box", "material": "wood", "position": { "x": 12.8, "y": 8.4 }, "halfW": 0.4, "halfH": 0.6 }
+  ]
+}

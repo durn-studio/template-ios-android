@@ -1,0 +1,40 @@
+Ticket: Fix Merge Physics & Overhaul Asset Scaling (Difficulty Balancing)
+Type: Bug / Enhancement
+Priority: High
+Assignees: [Designer Name], [Developer Name]
+
+Description:
+Currently, the game lacks the "spatial pressure" that makes games like Fruit Clash / Suika fun. Our higher-tier food items are too small, meaning the container never fills up, eliminating the risk of losing. Additionally, there is a bug where identical food items will rest against each other without triggering a merge.
+
+We need to fix the collision logic and drastically increase the scale of our higher-tier items to introduce real difficulty.
+
+Action Items for Developer (Physics & Logic)
+Fix "Sleeping Bodies" Merge Bug: * Ensure the merge logic fires continuously when bodies are touching, not just on the initial impact. Shift/duplicate merge checks from onCollisionStart to onCollisionActive (or equivalent in our physics engine).
+
+Check: If bodies go to "sleep" to save CPU, ensure that new items dropping nearby wake them up so merges can still trigger.
+
+Adjust Physics Scaling Math: * Update the growth formula for item evolution. Instead of adding a fixed number to the radius, scale by area.
+
+Each tier's radius should be roughly 1.35x to 1.45x larger than the previous tier.
+
+Update Footer Text: Change the bottom instructional text from "Match same players to merge!" to "Match same foods to merge!"
+
+Action Items for Designer (Art & Assets)
+Implement "Box Ratio Rule" for Rescaling:
+
+Work backwards from the final item. Scale the Level 12 item (e.g., the whole Pizza) so it takes up 60% to 70% of the container's total width.
+
+Scale the Level 11 item to take up roughly 40% to 45% of the container width.
+
+Scale all lower-tier items down proportionally from there.
+
+Verify Hitbox Alignment: Work with Dev (using Debug Draw) to ensure the visual edges of the .webp files perfectly match the mathematical physics circles. Eliminate any transparent "gaps" that make items look like they aren't touching.
+
+Acceptance Criteria (AC)
+[ ] Identical items that slowly roll to a stop next to each other successfully merge 100% of the time.
+
+[ ] The Level 12 item physically occupies more than half the width of the game box.
+
+[ ] The visual boundaries of the food items perfectly match their physics hitboxes.
+
+[ ] The footer text reflects the new food theme.

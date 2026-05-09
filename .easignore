@@ -1,0 +1,57 @@
+# .easignore — tells EAS Build which files to exclude from the
+# uploaded project archive. Without this, EAS falls back to
+# .gitignore and the archive ballooned to 1.1 GB (mostly the
+# 479 MB .git/ folder still holding pre-WebP-conversion PNG
+# blobs in pack files), which made the build worker time out
+# during spin-up.
+#
+# Goal: ship only what EAS actually needs — the source tree of
+# artifacts/fruit-clash plus essential workspace metadata.
+
+# Git history — EAS doesn't need it. Biggest single saving (~479 MB).
+.git/
+
+# Dependencies — EAS reinstalls on the worker.
+node_modules/
+.pnpm-store/
+
+# Build artifacts that may exist locally but get regenerated on EAS.
+artifacts/fruit-clash/ios/
+artifacts/fruit-clash/android/
+artifacts/fruit-clash/.expo/
+artifacts/fruit-clash/dist/
+artifacts/fruit-clash/web-build/
+
+# Other workspaces — not part of the iOS app build context.
+artifacts/api-server/
+artifacts/mockup-sandbox/
+artifacts/web/
+
+# Local files that aren't tracked or needed.
+attached_assets/
+Logs-*
+*.log
+.DS_Store
+
+# Locally-downloaded native build artifacts. The user's first
+# 1.1 GB upload was 4 of these accumulated in artifacts/fruit-clash/
+# — deleting them shrank the upload by ~1.1 GB on its own.
+*.ipa
+*.aab
+*.apk
+*.app.zip
+
+# Common monorepo extras.
+docs/
+.github/
+.agents/
+
+# EAS keeps its own credential cache; no need to upload.
+.expo/
+.turbo/
+.cache/
+
+# Editor / OS junk
+.vscode/
+.idea/
+*.swp

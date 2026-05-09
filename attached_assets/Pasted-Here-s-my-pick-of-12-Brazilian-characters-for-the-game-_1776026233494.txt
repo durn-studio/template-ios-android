@@ -1,0 +1,31 @@
+Here's my pick of 12 Brazilian characters for the game — 6 current squad players and 6 all-time legends. Remember, you won't use their real names in-game, just satirical caricatures with fun nicknames and exaggerated traits:
+
+**Current players (2026 World Cup squad)**
+
+**Vinicius Jr** — "O Relâmpago" (#7). Signature traits: lightning-fast sprint pose, dramatic dribbling stance, intense facial expression. He's the current face of Brazil football and a must-have.
+
+**Raphinha** — "O Guerreiro" (#11). Wild energy, aggressive celebration, arms pumping. The warrior spirit character.
+
+**Neymar** — "O Mágico" (#10). The most caricature-friendly player ever — floppy mohawk, dramatic diving/rolling pose, cheeky grin. Even if he doesn't make the final squad, he's too iconic and too funny to leave out.
+
+**Marquinhos** — "O Capitão" (#4). Captain's armband, commanding stance, pointing and organizing. The leader archetype.
+
+**Bruno Guimarães** — "O Maestro" (#5). Elegant passing pose, composed expression, orchestrating midfield.
+
+**Endrick** — "O Menino" (#9). Baby-faced, tiny but explosive, powerful shooting pose. The wonderkid archetype — huge head, even bigger smile.
+
+**Legends**
+
+**Pelé** — "O Rei" (#10). The king — crown-like hair, classic bicycle kick pose, golden aura. This should be the GOAT tier character.
+
+**Ronaldo Nazário** — "O Fenômeno" (#9). The 2002 triangle haircut is the single most caricature-able feature in football history. Muscular build, sprinting with ball.
+
+**Ronaldinho** — "O Bruxo" (#10). The biggest smile in football, gap teeth, headband, doing tricks. Pure joy personified.
+
+**Roberto Carlos** — "O Míssil" (#6). Tiny body, impossibly thick thighs, winding up a legendary free kick. The contrast between his small frame and cannon leg is comedy gold.
+
+**Garrincha** — "Alegria do Povo" (#7). Crooked legs (his real trademark), dribbling past everyone, old-school kit.
+
+**Cafu** — "O Pêndulo" (#2). The marauding fullback — sprinting up the wing, captain armband, huge smile, celebrating with the 2002 trophy pose.
+
+These 12 give you a perfect merge chain from current hype (Endrick as Tier 1) building up to the ultimate legend (Pelé as the GOAT Tier). The developer spec I already made covers exactly how to describe each one to an illustrator — you'd just update the character table with these names, traits, and poses. Want me to update the spec document with this Brazilian roster?

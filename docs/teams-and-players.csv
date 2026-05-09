@@ -1,0 +1,193 @@
+Group,Theme ID,Theme Name,Tier,Character,Real-world identity,Ring Color
+World Cup,superstars,Superstars,1,El Joven,Iniesta (young),#AA151B
+World Cup,superstars,Superstars,2,El Mago,Iniesta,#004D98
+World Cup,superstars,Superstars,3,O Samba,Ronaldinho,#009B3A
+World Cup,superstars,Superstars,4,La Flèche,Thierry Henry,#002654
+World Cup,superstars,Superstars,5,Die Mauer,Franz Beckenbauer ?,#000000
+World Cup,superstars,Superstars,6,O Artista,Zico ?,#FFDF00
+World Cup,superstars,Superstars,7,El Peludo,Carlos Valderrama,#FCD116
+World Cup,superstars,Superstars,8,O Bruxo,Ronaldinho,#009B3A
+World Cup,superstars,Superstars,9,Le Maestro,Zinedine Zidane,#002654
+World Cup,superstars,Superstars,10,El Pibe,Diego Maradona (young),#75AADB
+World Cup,superstars,Superstars,11,O Fenômeno,Ronaldo (R9),#006C35
+World Cup,superstars,Superstars,12,La Pulga,Lionel Messi,#FFD700
+World Cup,bra,Brazil,1,O Menino,Neymar ?,#009B3A
+World Cup,bra,Brazil,2,O Maestro,Zico,#FFDF00
+World Cup,bra,Brazil,3,O Capitão,Cafu ?,#009B3A
+World Cup,bra,Brazil,4,O Guerreiro,Romário ?,#FFDF00
+World Cup,bra,Brazil,5,O Mágico,Romário,#009B3A
+World Cup,bra,Brazil,6,O Relâmpago,Roberto Carlos ?,#FFDF00
+World Cup,bra,Brazil,7,O Pêndulo,Rivelino ?,#009B3A
+World Cup,bra,Brazil,8,Alegria do Povo,Garrincha,#FFDF00
+World Cup,bra,Brazil,9,O Míssil,Rivaldo ?,#009B3A
+World Cup,bra,Brazil,10,O Bruxo,Ronaldinho,#FFDF00
+World Cup,bra,Brazil,11,O Fenômeno,Ronaldo (R9),#009B3A
+World Cup,bra,Brazil,12,O Rei,Pelé,#FFD700
+World Cup,arg,Argentina,1,El Araña,Sergio Romero ?,#75AADB
+World Cup,arg,Argentina,2,El Toro,Lautaro Martínez,#43A5C8
+World Cup,arg,Argentina,3,El Dibu,Emiliano Martínez,#75AADB
+World Cup,arg,Argentina,4,La Joya,Paulo Dybala,#43A5C8
+World Cup,arg,Argentina,5,El Ángel,Ángel Di María,#75AADB
+World Cup,arg,Argentina,6,El Matador,Gabriel Batistuta,#43A5C8
+World Cup,arg,Argentina,7,El Burrito,Ariel Ortega,#75AADB
+World Cup,arg,Argentina,8,El Caudillo,Javier Mascherano ?,#43A5C8
+World Cup,arg,Argentina,9,El Flaco,Mario Kempes ?,#75AADB
+World Cup,arg,Argentina,10,El Loco,Hugo Gatti ?,#43A5C8
+World Cup,arg,Argentina,11,El Diego,Diego Maradona,#75AADB
+World Cup,arg,Argentina,12,La Pulga,Lionel Messi,#FFD700
+World Cup,esp,Spain,1,El Joven,Iker Casillas (young) ?,#AA151B
+World Cup,esp,Spain,2,El Mago,Andrés Iniesta,#F1BF00
+World Cup,esp,Spain,3,El Cerebro,Xavi Hernández,#AA151B
+World Cup,esp,Spain,4,El Tanque,Fernando Llorente ?,#F1BF00
+World Cup,esp,Spain,5,El Ilusionista,Andrés Iniesta ?,#AA151B
+World Cup,esp,Spain,6,El Arquitecto,Xavi Hernández ?,#F1BF00
+World Cup,esp,Spain,7,El Niño,Fernando Torres,#AA151B
+World Cup,esp,Spain,8,San Iker,Iker Casillas,#F1BF00
+World Cup,esp,Spain,9,El Muro,Sergio Ramos ?,#AA151B
+World Cup,esp,Spain,10,La Saeta,Raúl González ?,#F1BF00
+World Cup,esp,Spain,11,El Zorro,Raúl González ?,#AA151B
+World Cup,esp,Spain,12,El Sabio,Andrés Iniesta ?,#FFD700
+World Cup,fra,France,1,Le Petit,Kylian Mbappé (young) ?,#002654
+World Cup,fra,France,2,Le Démolisseur,Patrick Vieira ?,#ED2939
+World Cup,fra,France,3,Le Patron,Didier Deschamps ?,#002654
+World Cup,fra,France,4,La Flèche,Thierry Henry,#ED2939
+World Cup,fra,France,5,Le Mur,Laurent Blanc ?,#002654
+World Cup,fra,France,6,Le Président,Michel Platini ?,#ED2939
+World Cup,fra,France,7,Le Roi,Michel Platini,#002654
+World Cup,fra,France,8,Le Maestro,Zinedine Zidane,#ED2939
+World Cup,fra,France,9,Le Magicien,Zinedine Zidane ?,#002654
+World Cup,fra,France,10,Le Génie,Kylian Mbappé,#ED2939
+World Cup,fra,France,11,La Tornade,Kylian Mbappé ?,#002654
+World Cup,fra,France,12,L'Empereur,Zinedine Zidane,#FFD700
+World Cup,ger,Germany,1,Der Junge,Jamal Musiala (young) ?,#DD0000
+World Cup,ger,Germany,2,Der Panzer,Toni Kroos ?,#000000
+World Cup,ger,Germany,3,Die Mauer,Franz Beckenbauer,#DD0000
+World Cup,ger,Germany,4,Der Bomber,Gerd Müller,#FFCE00
+World Cup,ger,Germany,5,Der Titan,Oliver Kahn,#DD0000
+World Cup,ger,Germany,6,Die Maschine,Thomas Müller ?,#000000
+World Cup,ger,Germany,7,Der Torjäger,Miroslav Klose,#DD0000
+World Cup,ger,Germany,8,Der Terrier,Bastian Schweinsteiger ?,#FFCE00
+World Cup,ger,Germany,9,Der Libero,Lothar Matthäus ?,#000000
+World Cup,ger,Germany,10,Das Phantom,Mesut Özil ?,#DD0000
+World Cup,ger,Germany,11,Der König,Franz Beckenbauer ?,#FFCE00
+World Cup,ger,Germany,12,Der Kaiser,Franz Beckenbauer,#FFD700
+World Cup,eng,England,1,The Kid,Wayne Rooney (young) ?,#CF081F
+World Cup,eng,England,2,The Bulldog,John Terry ?,#002366
+World Cup,eng,England,3,The Captain,David Beckham ?,#CF081F
+World Cup,eng,England,4,The Magician,Paul Gascoigne ?,#002366
+World Cup,eng,England,5,The Wall,Tony Adams ?,#CF081F
+World Cup,eng,England,6,The Fox,Jamie Vardy ?,#002366
+World Cup,eng,England,7,The Gentleman,Gary Lineker ?,#CF081F
+World Cup,eng,England,8,Sir Goal,Geoff Hurst ?,#002366
+World Cup,eng,England,9,The Lion,Harry Kane ?,#CF081F
+World Cup,eng,England,10,The Legend,Steven Gerrard ?,#002366
+World Cup,eng,England,11,The King,David Beckham ?,#CF081F
+World Cup,eng,England,12,The Icon,Bobby Charlton,#FFD700
+World Cup,por,Portugal,1,O Menino,Bernardo Silva (young) ?,#006C35
+World Cup,por,Portugal,2,O Lobo,Pepe ?,#FF0000
+World Cup,por,Portugal,3,O Maestro,Luís Figo ?,#006C35
+World Cup,por,Portugal,4,A Pantera,Eusébio ?,#FF0000
+World Cup,por,Portugal,5,O Falcão,Nuno Gomes ?,#006C35
+World Cup,por,Portugal,6,O Leão,Rui Costa ?,#FF0000
+World Cup,por,Portugal,7,O Capitão,Pepe ?,#006C35
+World Cup,por,Portugal,8,O Tigre,Cristiano Ronaldo ?,#FF0000
+World Cup,por,Portugal,9,A Águia,Ricardo Quaresma ?,#006C35
+World Cup,por,Portugal,10,O Cisne,Luís Figo ?,#FF0000
+World Cup,por,Portugal,11,A Bala,Cristiano Ronaldo ?,#006C35
+World Cup,por,Portugal,12,O Comandante,Cristiano Ronaldo,#FFD700
+World Cup,col,Colombia,1,El Tigre,Radamel Falcao,#FCD116
+World Cup,col,Colombia,2,El Tren,Freddy Rincón ?,#003893
+World Cup,col,Colombia,3,El Pibe,Carlos Valderrama,#FCD116
+World Cup,col,Colombia,4,El Escorpión,René Higuita,#CE1126
+World Cup,col,Colombia,5,El Loco,Faustino Asprilla ?,#003893
+World Cup,col,Colombia,6,El Caballero,Mario Yepes ?,#FCD116
+World Cup,col,Colombia,7,El Rey,James Rodríguez ?,#003893
+World Cup,col,Colombia,8,La Bestia,Adolfo Valencia ?,#CE1126
+World Cup,col,Colombia,9,El Fantasma,Iván Ramiro Córdoba ?,#FCD116
+World Cup,col,Colombia,10,El Mágico,James Rodríguez,#003893
+World Cup,col,Colombia,11,El Peludo,Carlos Valderrama,#FCD116
+World Cup,col,Colombia,12,El Ídolo,Carlos Valderrama ?,#FFD700
+America,usa,American Menu,1,Cookie,Cookie,#8B4513
+America,usa,American Menu,2,Corn Cob,Corn Cob,#FFD700
+America,usa,American Menu,3,Mac & Cheese,Mac & Cheese,#FF8C00
+America,usa,American Menu,4,Hot Dog,Hot Dog,#BF0A30
+America,usa,American Menu,5,Donut,Donut,#FF69B4
+America,usa,American Menu,6,Pancakes,Pancakes,#DEB887
+America,usa,American Menu,7,Drumstick,Drumstick,#DAA520
+America,usa,American Menu,8,Apple Pie,Apple Pie,#8B0000
+America,usa,American Menu,9,BBQ Rib,BBQ Rib,#A0522D
+America,usa,American Menu,10,Pizza Slice,Pizza Slice,#FF6347
+America,usa,American Menu,11,Milkshake,Milkshake,#FFB6C1
+America,usa,American Menu,12,Cheeseburger,Cheeseburger,#FFD700
+America,us_history,US History,1,Lil' Revere,Paul Revere,#8B4513
+America,us_history,US History,2,The General,George Washington,#002868
+America,us_history,US History,3,Electric Ben,Benjamin Franklin,#FFD700
+America,us_history,US History,4,Hamilton Star,Alexander Hamilton,#8B0000
+America,us_history,US History,5,The Emancipator,Abraham Lincoln,#1C1C1C
+America,us_history,US History,6,Rough Rider,Theodore Roosevelt,#556B2F
+America,us_history,US History,7,Ike,Dwight D. Eisenhower,#4B5320
+America,us_history,US History,8,The Dreamer,Martin Luther King Jr.,#002868
+America,us_history,US History,9,The Speaker,Frederick Douglass ?,#8B4513
+America,us_history,US History,10,Abe 2.0,Abraham Lincoln,#808080
+America,us_history,US History,11,The Monument,Washington Monument,#C0C0C0
+America,us_history,US History,12,The Great Statue,Statue of Liberty,#FFD700
+America,us_popstars,Pop Stars,1,Tiny Singer,Michael Jackson (young) ?,#FFD700
+America,us_popstars,Pop Stars,2,Teen Idol,Justin Bieber ?,#9370DB
+America,us_popstars,Pop Stars,3,Pop Princess,Britney Spears ?,#FF69B4
+America,us_popstars,Pop Stars,4,Boy Band Leader,Justin Timberlake ?,#4169E1
+America,us_popstars,Pop Stars,5,Material Girl,Madonna,#FF1493
+America,us_popstars,Pop Stars,6,Purple Maestro,Prince,#7B2FBE
+America,us_popstars,Pop Stars,7,The Diva,Whitney Houston ?,#FFD700
+America,us_popstars,Pop Stars,8,The Rapper,Jay-Z ?,#DAA520
+America,us_popstars,Pop Stars,9,King of Rock,Elvis Presley,#FF4500
+America,us_popstars,Pop Stars,10,King of Pop,Michael Jackson,#C0C0C0
+America,us_popstars,Pop Stars,11,Rocket Man,Elton John,#FF6347
+America,us_popstars,Pop Stars,12,The Boss,Bruce Springsteen,#FFD700
+America,us_landmarks,US Landmarks,1,Street Sign,Street Sign,#2E8B57
+America,us_landmarks,US Landmarks,2,The Bean,The Bean,#C0C0C0
+America,us_landmarks,US Landmarks,3,Yellow Cab,Yellow Cab,#FFD700
+America,us_landmarks,US Landmarks,4,Cable Car,Cable Car,#B22222
+America,us_landmarks,US Landmarks,5,White House,White House,#F5F5F5
+America,us_landmarks,US Landmarks,6,The Rocket,The Rocket,#FF4500
+America,us_landmarks,US Landmarks,7,Empire State,Empire State,#808080
+America,us_landmarks,US Landmarks,8,Hollywood,Hollywood,#FFD700
+America,us_landmarks,US Landmarks,9,The Arch,The Arch,#C0C0C0
+America,us_landmarks,US Landmarks,10,Mt. Rushmore,Mt. Rushmore,#A0522D
+America,us_landmarks,US Landmarks,11,The Canyon,The Canyon,#CD853F
+America,us_landmarks,US Landmarks,12,Golden Gate,Golden Gate,#FFD700
+World Cup,mex,Mexico,1,El Chico,Hirving Lozano (young) ?,#006847
+World Cup,mex,Mexico,2,El Rayo,Cuauhtémoc Blanco ?,#CE1126
+World Cup,mex,Mexico,3,El Guerrero,Rafael Márquez ?,#006847
+World Cup,mex,Mexico,4,El Bravo,Jorge Campos ?,#CE1126
+World Cup,mex,Mexico,5,El Matador,Javier Hernández ?,#006847
+World Cup,mex,Mexico,6,El Místico,Cuauhtémoc Blanco,#CE1126
+World Cup,mex,Mexico,7,El Azteca,Rafael Márquez,#006847
+World Cup,mex,Mexico,8,El Jefe,Hugo Sánchez ?,#CE1126
+World Cup,mex,Mexico,9,El Halcón,Jared Borgetti ?,#006847
+World Cup,mex,Mexico,10,El Emperador,Antonio Carbajal ?,#CE1126
+World Cup,mex,Mexico,11,El Hugo,Hugo Sánchez,#006847
+World Cup,mex,Mexico,12,El Dios,Hugo Sánchez,#FFD700
+Mexican Fiesta,mxc,Viva México,1,Spicy Chili,Spicy Chili,#228B22
+Mexican Fiesta,mxc,Viva México,2,Street Taco,Street Taco,#DAA520
+Mexican Fiesta,mxc,Viva México,3,Guacamole,Guacamole,#2E8B57
+Mexican Fiesta,mxc,Viva México,4,Axolotl,Axolotl,#FF69B4
+Mexican Fiesta,mxc,Viva México,5,Piñata,Piñata,#FF6347
+Mexican Fiesta,mxc,Viva México,6,Lucha Mask,Lucha Mask,#4169E1
+Mexican Fiesta,mxc,Viva México,7,Mariachi Hat,Mariachi Hat,#FFD700
+Mexican Fiesta,mxc,Viva México,8,The Painter,The Painter,#8B0000
+Mexican Fiesta,mxc,Viva México,9,El Ángel,El Ángel,#FFD700
+Mexican Fiesta,mxc,Viva México,10,The Volcano,The Volcano,#808080
+Mexican Fiesta,mxc,Viva México,11,Great Pyramid,Great Pyramid,#A0522D
+Mexican Fiesta,mxc,Viva México,12,Sun Stone,Sun Stone,#FFD700
+Euro Tour,euro,Euro Tour,1,Tiny Espresso,Tiny Espresso,#8B4513
+Euro Tour,euro,Euro Tour,2,Le Croissant,Le Croissant,#DAA520
+Euro Tour,euro,Euro Tour,3,Bavarian Pretzel,Bavarian Pretzel,#D2691E
+Euro Tour,euro,Euro Tour,4,Phone Box,Phone Box,#B22222
+Euro Tour,euro,Euro Tour,5,Gondola,Gondola,#1C1C1C
+Euro Tour,euro,Euro Tour,6,Cuckoo Clock,Cuckoo Clock,#8B4513
+Euro Tour,euro,Euro Tour,7,Royal Guard,Royal Guard,#B22222
+Euro Tour,euro,Euro Tour,8,Mona Lisa,Mona Lisa,#DAA520
+Euro Tour,euro,Euro Tour,9,Leaning Tower,Leaning Tower,#F5F5DC
+Euro Tour,euro,Euro Tour,10,Eiffel Tower,Eiffel Tower,#C0C0C0
+Euro Tour,euro,Euro Tour,11,Matterhorn,Matterhorn,#87CEEB
+Euro Tour,euro,Euro Tour,12,Colosseum,Colosseum,#FFD700

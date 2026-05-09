@@ -1,0 +1,20 @@
+{
+  "id": "world1-level7",
+  "worldId": "street_pitch",
+  "name": "Triple Threat",
+  "width": 16,
+  "height": 9,
+  "slingshot": { "x": 2, "y": 7 },
+  "goal": { "x": 14, "y": 6, "width": 2, "height": 3 },
+  "stars": { "one": 2000, "two": 3500, "three": 5000 },
+  "shotsAllowed": 3,
+  "blocks": [
+    { "shape": "circle", "material": "enemy", "position": { "x": 9.5, "y": 3.0 }, "radius": 0.35 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 9.5, "y": 6.0 }, "radius": 0.35 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 9.5, "y": 8.4 }, "radius": 0.35 },
+    { "shape": "box", "material": "wood", "position": { "x": 8.5, "y": 4.5 }, "halfW": 0.4, "halfH": 0.4, "type": "static" },
+    { "shape": "box", "material": "wood", "position": { "x": 8.5, "y": 7.5 }, "halfW": 0.4, "halfH": 0.4, "type": "static" },
+    { "shape": "box", "material": "tin", "position": { "x": 12.5, "y": 8.4 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "tin", "position": { "x": 12.5, "y": 7.2 }, "halfW": 0.5, "halfH": 0.6 }
+  ]
+}

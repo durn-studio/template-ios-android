@@ -1,0 +1,22 @@
+{
+  "id": "world1-level9",
+  "worldId": "street_pitch",
+  "name": "Pinball",
+  "width": 16,
+  "height": 9,
+  "slingshot": { "x": 2, "y": 7 },
+  "goal": { "x": 14, "y": 6, "width": 2, "height": 3 },
+  "stars": { "one": 2200, "two": 4000, "three": 6000 },
+  "shotsAllowed": 3,
+  "blocks": [
+    { "shape": "box", "material": "tin", "position": { "x": 7.5, "y": 4.5 }, "halfW": 0.18, "halfH": 1.6, "type": "static" },
+    { "shape": "box", "material": "tin", "position": { "x": 12.5, "y": 4.5 }, "halfW": 0.18, "halfH": 1.6, "type": "static" },
+    { "shape": "box", "material": "tin", "position": { "x": 10, "y": 3.0 }, "halfW": 2.7, "halfH": 0.18, "type": "static" },
+    { "shape": "circle", "material": "enemy", "position": { "x": 8.5, "y": 5.0 }, "radius": 0.3 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 10, "y": 5.0 }, "radius": 0.3 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 11.5, "y": 5.0 }, "radius": 0.3 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 8.5, "y": 6.5 }, "radius": 0.3 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 11.5, "y": 6.5 }, "radius": 0.3 },
+    { "shape": "box", "material": "tin", "position": { "x": 10, "y": 7.8 }, "halfW": 1.0, "halfH": 0.18 }
+  ]
+}

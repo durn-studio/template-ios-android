@@ -1,0 +1,8 @@
+{
+  "name": "expo-icloud-kv",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Local Expo module — iOS NSUbiquitousKeyValueStore bridge for tiny cross-device cloud sync (coins).",
+  "main": "src/index.ts",
+  "types": "src/index.ts"
+}

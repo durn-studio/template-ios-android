@@ -1,0 +1,64 @@
+Integrating those iconic American categories—History, Pop Culture, and Landmarks—into your merge game is a fantastic idea to build depth. 
+
+Here are the specific, satirical "sticker" hierarchies (12 items each, from smallest to largest) for your three new themes, designed to follow the precise scaling rules we set in your team's ticket.
+
+---
+
+### Theme 1: American Historical Legends
+* **Art Style:** Caricatures with exaggerated, historically recognizable props (hats, beards, wigs). The highest-tier figures must be noticeably massive and imposing in the container.
+* **The Vibe:** Patriotic but playful.
+
+| Tier / Level | Historical Figure (Satirical Concept) | Potential Visual Image Description |
+| :--- | :--- | :--- |
+| **1 (Smallest)** | **Lil’ Paul Revere** | A tiny, frantic man on a toy-sized rocking horse, holding a small lantern. |
+| **2** | **"The General" Washington** | A young George W. with a slightly-too-large tricorn hat and white wig. |
+| **3** | **Ben "Electric" Franklin** | Bald, spectacled man with a soot-stained face, holding a kite being struck by lightning. |
+| **4** | **"Hamilton" Superstar** | A highly-dramatic caricature of Alexander Hamilton, posing as if singing on a stage. |
+| **5** | **"The Emancipator" Lincoln** | A very tall, thin Abe with an impossibly tall stovepipe hat. |
+| **6** | **"Rough Rider" Teddy** | Theodore Roosevelt with huge round glasses, a massive mustache, and a rifle. |
+| **7** | **Ike Eisenhower** | A stern-faced man with a "5-Star" general uniform and a massive grin. |
+| **8** | **JFK "The Dreamer"** | A youthful, idealized caricature of John F. Kennedy pointing toward a tiny moon. |
+| **9** | **MLK "The Speaker"** | A dignified MLK Jr. speaking at a massive podium that takes up the bottom 1/4 of his circle. |
+| **10** | **"Abe 2.0" (The Monument)** | The seated statue of Lincoln from the memorial, but looking grumpy. (Starts to get huge). |
+| **11** | **Washington (The Monument)** | George Washington, but he *is* the shape of the Obelisk, looking down from the very top. |
+| **12 (Largest)** | **"The Great Statue"** | **Lady Liberty (The Statue of Liberty),** but with a funny, sassy expression, her torch smoking. *Must occupy 70% of the box width.* |
+
+---
+
+### Theme 2: American Pop Stars
+* **Art Style:** Stylized, colorful, and "shiny" (like glitter stickers). We are focusing on massive visual signatures (hair, costumes, iconic moves) rather than exact facial likenesses, keeping the "lookalike/parody" feel we discussed.
+
+| Tier / Level | Pop Star (Satirical Concept) | Potential Visual Image Description |
+| :--- | :--- | :--- |
+| **1 (Smallest)** | **Tiny Singer** | A generic "sticker" icon of a sparkling microphone. (Starts the merge loop). |
+| **2** | **The Teen Idol** | A lookalike young Justin Bieber with the classic 2010 "swoop" haircut. |
+| **3** | **The Pop Princess** | A lookalike early Britney Spears, dancing in her "...Baby One More Time" school uniform. |
+| **4** | **The Boy Band Leader** | A lookalike *'NSYNC-era* Justin Timberlake, but with his iconic "ramen noodle" blonde hair. |
+| **5** | **The "Material Girl"** | A lookalike 1980s Madonna, covered in lace, cross necklaces, and "Boy Toy" belts. |
+| **6** | **The Purple Maestro** | A lookalike Prince, posing dynamically in a shimmering purple suit, playing a bizarre guitar. |
+| **7** | **The Diva** | A lookalike Beyoncé, wind-blown, posing as if *just* finishing a massive dance move. |
+| **8** | **The Rapper** | A generic but iconic caricature of a 90s hip-hop star (think Biggie/Tupac lookalikes) with massive chains. |
+| **9** | **The King of Rock & Roll** | A lookalike Elvis Presley in his late 70s white jumpsuite with a massive rhinestone collar. |
+| **10** | **The "King of Pop"** | A lookalike Michael Jackson, captured mid-"Thriller" pose or doing a moonwalk, wearing a single sequined glove. |
+| **11** | **The "Rocket Man"** | A lookalike Elton John (US tour years), wearing massive, sparkling star-shaped glasses. |
+| **12 (Largest)** | **"The Boss" (The Legend)** | **A lookalike Bruce Springsteen,** but as a giant, muscular figure, playing a battered guitar with the entire American flag draped over his shoulders. *Must be uncomfortably huge.* |
+
+---
+
+### Theme 3: US Landmarks
+* **Art Style:** Highly stylized, recognizable architectural silhouettes, compressed into funny circle shapes. We must emphasize the scale shift—going from a simple street sign to a massive piece of geography or infrastructure.
+
+| Tier / Level | Landmark (Satirical Concept) | Potential Visual Image Description |
+| :--- | :--- | :--- |
+| **1 (Smallest)** | **The Street Sign** | A simple green-and-white circle sign that says: `MAIN ST. USA` (Smallest starting point). |
+| **2** | **"The Bean"** | A stylized, shiny circle of **Chicago's "Cloud Gate"** statue (The Bean). |
+| **3** | **New York Yellow Cab** | A squashed, circular yellow taxi with a smoking exhaust pipe and an angry driver. |
+| **4** | **San Francisco Cable Car** | A classic red-and-green San Francisco cable car, tilting precariously as it goes up a hill. |
+| **5** | **The White House** | A compact, cartoonish White House with a small helicopter landing on the lawn. |
+| **6** | **"The Rocket" (Cape Canaveral)** | A Saturn V rocket, caught just at lift-off, surrounded by a massive orange cloud of fire. |
+| **7** | **The Empire State Building** | A very stylized, tall silhouette, but with a tiny King Kong figure hanging from the spire. |
+| **8** | **Hollywood Sign** | The letters `HOLLYWOOD` bent into a circle, sparkling with star dust. |
+| **9** | **"The Arch" (St. Louis)** | The Gateway Arch, perfectly framing a cartoon Mississippi steamboat. |
+| **10** | **Mount Rushmore** | A circle containing the four presidents' faces, but all four are looking confused and cross-eyed. |
+| **11** | **"The Canyon"** | A dramatic, circular slice of the **Grand Canyon** with a tiny, tiny river and a raft at the bottom. |
+| **12 (Largest)** | **"The Golden Gate"** | **The Golden Gate Bridge,** but compressed so that one entire suspension tower fills most of the circle, looking massive. *Must occupy 70% of the box width.* |

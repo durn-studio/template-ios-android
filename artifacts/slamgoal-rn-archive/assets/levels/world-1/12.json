@@ -1,0 +1,24 @@
+{
+  "id": "world1-level12",
+  "worldId": "street_pitch",
+  "name": "Captain",
+  "width": 16,
+  "height": 9,
+  "slingshot": { "x": 2, "y": 7 },
+  "goal": { "x": 14, "y": 6, "width": 2, "height": 3 },
+  "stars": { "one": 4000, "two": 7500, "three": 11000 },
+  "shotsAllowed": 5,
+  "blocks": [
+    { "shape": "box", "material": "container", "position": { "x": 8.5, "y": 8.0 }, "halfW": 1.0, "halfH": 1.0, "type": "static" },
+    { "shape": "box", "material": "container", "position": { "x": 8.5, "y": 6.0 }, "halfW": 1.0, "halfH": 1.0, "type": "static" },
+    { "shape": "box", "material": "container", "position": { "x": 11.5, "y": 8.0 }, "halfW": 1.0, "halfH": 1.0, "type": "static" },
+    { "shape": "box", "material": "container", "position": { "x": 11.5, "y": 4.0 }, "halfW": 1.0, "halfH": 1.0, "type": "static" },
+    { "shape": "circle", "material": "boss_captain", "position": { "x": 10.0, "y": 4.5 }, "radius": 0.7 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 8.5, "y": 4.0 }, "radius": 0.35 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 11.5, "y": 6.0 }, "radius": 0.35 },
+    { "shape": "circle", "material": "enemy", "position": { "x": 13.0, "y": 4.0 }, "radius": 0.35 },
+    { "shape": "box", "material": "wood", "position": { "x": 13.0, "y": 8.4 }, "halfW": 0.5, "halfH": 0.6 },
+    { "shape": "box", "material": "tin", "position": { "x": 10.0, "y": 2.8 }, "halfW": 0.18, "halfH": 0.6 },
+    { "shape": "box", "material": "tin", "position": { "x": 10.0, "y": 6.0 }, "halfW": 1.5, "halfH": 0.18 }
+  ]
+}
