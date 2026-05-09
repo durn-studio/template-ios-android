@@ -30,9 +30,9 @@ artifacts/
 ```
 
 `artifacts/_archive/` contains the prior incarnations of this repo
-(Bubble Masters merge game, Slam Goal football-physics, a Unity
-prototype, an Express API server, a Vite marketing site, and the
-codegen libs that paired with the API). See
+(Bubble Masters merge game, Slam Goal football-physics, an Express
+API server, a Vite marketing site, and the codegen libs that paired
+with the API). See
 [`artifacts/_archive/README.md`](artifacts/_archive/README.md) for
 the index.
 

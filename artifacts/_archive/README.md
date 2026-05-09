@@ -12,7 +12,6 @@ codegen pipelines).
 | Path | What it is |
 |---|---|
 | `slamgoal-rn/` | Slam Goal — Angry-Birds-style football-physics game built on Expo + planck.js + Skia. Phases 0–5c shipped. The richest reference for the SDK plumbing the template inherits. |
-| `slamgoal-unity/` | Slam Goal Unity prototype (Unity 6 LTS / 2D URP / C#). Phase Unity 1–2b. Replaced the RN prototype briefly; the active line went back to Expo, which is why the template is RN. |
 | `web/` | Vite + Tailwind marketing site, deployed to Vercel. |
 | `api-server/` | Express 5 API deployed to Railway. Health check at `/api/healthz`. Pairs with `root-lib/api-spec` + `root-lib/api-zod` + `root-lib/api-client-react`. |
 | `mockup-sandbox/` | Vite UI mockup playground. |
@@ -34,6 +33,11 @@ codegen pipelines).
 - **Generating assets.** `root-scripts/generate-app-icon.mjs` and
   `root-scripts/gen-sfx.py` are project-agnostic enough to copy out
   and re-aim.
+
+`_deprecated/` holds dead-end branches not worth surfacing in the
+table above (e.g. a short-lived Unity 6 / C# port of Slam Goal that
+was abandoned in favour of staying on Expo). Kept on disk only so
+the git history isn't orphaned.
 
 ## Restoring something
 

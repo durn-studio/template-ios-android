@@ -1,12 +1,12 @@
 # Operating notes for Claude
 
-This repo is a **template** for new iOS + Android apps. The active
-starter lives at `artifacts/expo-template/` — most session work
-targets it. Past projects (Bubble Masters, Slam Goal, a Unity
-prototype, the API server, codegen libs, marketing site) are kept
-under `artifacts/_archive/` for reference; don't develop against
-them, but they're a useful source when wiring a new feature that
-mirrors something we've shipped before.
+This repo is a **React Native (Expo) template** for new iOS +
+Android apps. The active starter lives at `artifacts/expo-template/`
+— all session work targets it. Past projects (Bubble Masters, Slam
+Goal, the API server, codegen libs, marketing site) are kept under
+`artifacts/_archive/` for reference; don't develop against them,
+but they're a useful source when wiring a new feature that mirrors
+something we've shipped before.
 
 `cd artifacts/expo-template` for `pnpm`, EAS, or `expo` commands.
 
