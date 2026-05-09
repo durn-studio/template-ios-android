@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/slamgoal/"
+title = "Slam Goal"
+version = "1.0.0"
+id = "artifacts/slamgoal"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/slamgoal/" ]
+localPort = 25389
+
+[services.development]
+run = "pnpm --filter @workspace/slamgoal run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/slamgoal", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/slamgoal", "run", "serve" ]
+
+[services.env]
+PORT = "25389"
+BASE_PATH = "/slamgoal/"

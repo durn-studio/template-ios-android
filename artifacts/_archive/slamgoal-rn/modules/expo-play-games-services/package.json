@@ -1,0 +1,8 @@
+{
+  "name": "expo-play-games-services",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Local Expo module — Android Google Play Games Services (PGS v2) bridge.",
+  "main": "src/index.ts",
+  "types": "src/index.ts"
+}

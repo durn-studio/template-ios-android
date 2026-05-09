@@ -1,71 +1,67 @@
-# Bubble Masters: The Next Level
+# Expo iOS + Android template
 
-Suika / Watermelon-style drop-and-merge physics game with a football / World Cup theme, plus three additional themed "worlds." See [`artifacts/fruit-clash/GAME_DOCUMENTATION.md`](./artifacts/fruit-clash/GAME_DOCUMENTATION.md) for the full gameplay and architecture reference.
+A reusable starter for shipping a real iOS + Android app via Expo
++ EAS, with the integration plumbing already wired:
 
-> **Status — May 2026:** This repo is being repurposed as **Goal Smash** (working title), an Angry-Birds-style landscape physics-destruction football game. The integration layer (ads, IAP, leaderboards, EAS pipeline, custom Expo modules) is reused; the merge gameplay is being replaced. See [`REBRANDING.md`](./REBRANDING.md) for the identity-swap checklist. Until the rebrand lands, the workspace name (`fruit-clash`) and product name (`Bubble Masters`) below remain accurate.
+- **AdMob** (`react-native-google-mobile-ads`) — banner, interstitial,
+  rewarded, app-open. Mediation plugin included.
+- **RevenueCat** (`react-native-purchases`) — Pro entitlement +
+  consumable IAPs, exposed via `PurchasesContext`.
+- **AppsFlyer** — attribution + ATT prompt sequencing on iOS.
+- **Game Center / Play Games** — leaderboards via custom local Expo
+  modules (`expo-game-center`, `expo-play-games-services`) behind a
+  single `lib/gameCenter.ts` dispatch.
+- **iCloud Key-Value Store** — cross-device save sync via
+  `expo-icloud-kv` (custom local module).
+- **Audio** — `expo-audio` SFX + music with mute/volume persistence.
+- **Physics smoke test** — `planck.js` + `@shopify/react-native-skia`
+  bouncing-bodies demo at `/smoketest`, doubles as perf canary.
 
-## Workspace layout
+The intent is to clone this repo, rename the workspace + bundle ids,
+swap the `REPLACE_WITH_*` placeholders for real keys, and ship.
+`grep -r "REPLACE_WITH_"` finds them all.
 
-pnpm workspace monorepo. Each package manages its own dependencies.
+## Layout
 
 ```
 artifacts/
-├── api-server/       # Express 5 API (deployed to Railway)
-├── fruit-clash/      # Expo mobile app (built via EAS)
-└── mockup-sandbox/   # Vite UI mockup playground (deployed to Vercel)
-
-lib/
-├── api-client-react/ # Generated react-query client (from OpenAPI)
-├── api-spec/         # OpenAPI spec + Orval codegen
-├── api-zod/          # Generated Zod schemas
-└── db/               # Drizzle ORM + PostgreSQL schema
-
-scripts/              # Workspace scripts package
+├── expo-template/    # The actual starter — clone + rename to start
+└── _archive/         # Past projects + tooling, kept for reference
 ```
 
-## Tech stack
+`artifacts/_archive/` contains the prior incarnations of this repo
+(Bubble Masters merge game, Slam Goal football-physics, a Unity
+prototype, an Express API server, a Vite marketing site, and the
+codegen libs that paired with the API). See
+[`artifacts/_archive/README.md`](artifacts/_archive/README.md) for
+the index.
 
-- **Language**: TypeScript 5.9 (strict)
-- **Package manager**: pnpm workspaces, Node 24
-- **Mobile**: Expo (React Native) + expo-router, distributed via EAS
-- **API**: Express 5 + Pino + Zod
-- **Database**: PostgreSQL + Drizzle ORM (managed on Railway)
-- **Mockup**: Vite + React + Tailwind (deployed to Vercel)
-- **API codegen**: Orval (OpenAPI → react-query hooks + Zod schemas)
-
-## Prerequisites
-
-- Node.js 24
-- pnpm 9+
-- For mobile: Expo account + EAS CLI (`npm i -g eas-cli`)
-
-## Local setup
+## Getting started
 
 ```bash
 pnpm install
-cp artifacts/api-server/.env.example artifacts/api-server/.env
-cp lib/db/.env.example lib/db/.env
-# Fill in DATABASE_URL pointing at your local or Railway Postgres
+cd artifacts/expo-template
+pnpm dev          # expo start
+pnpm typecheck
 ```
 
-## Common commands
+Then walk the per-SDK setup notes in `artifacts/expo-template/`.
 
-```bash
-pnpm run typecheck                                    # typecheck all packages
-pnpm run build                                        # typecheck + build all packages
-pnpm --filter @workspace/api-server run dev           # run API server locally
-pnpm --filter @workspace/fruit-clash run dev          # run Expo app locally
-pnpm --filter @workspace/mockup-sandbox run dev       # run mockup sandbox
-pnpm --filter @workspace/db run push                  # push Drizzle schema changes
-pnpm --filter @workspace/api-spec run codegen         # regenerate API client from OpenAPI
-```
+## Release workflow
 
-## Deployment
+`main` is the integration trunk. Every TestFlight build and every
+OTA update comes from clean, up-to-date `main`. The
+`build:production` and `update:production` scripts in
+`artifacts/expo-template/package.json` enforce this — they refuse to
+run unless the working tree is clean and `HEAD` matches
+`origin/main` exactly. Don't bypass these guards; fix the underlying
+state instead.
 
-| Target | Provider | Trigger |
-|--------|----------|---------|
-| API + DB | Railway | Push to `main` (Railway GitHub integration) |
-| Mobile app | EAS Build + EAS Update | Manual / tag via GitHub Actions |
-| Mockup sandbox | Vercel | Push to `main` (Vercel GitHub integration) |
+| Change touches | Run |
+|---|---|
+| Native deps, `app.json` plugins, native config, app version | `pnpm build:production` |
+| JS / TSX / assets / strings | `pnpm update:production` |
 
-Environment variables for each deployment live in the provider's dashboard. See each package's `.env.example` for the keys it expects.
+`runtimeVersion.policy: "appVersion"` in `app.json` means OTA only
+reaches clients on the same `version` string — bumping `version`
+requires a full build.

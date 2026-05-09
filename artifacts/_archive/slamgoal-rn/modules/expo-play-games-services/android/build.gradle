@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+group = 'expo.modules.playgamesservices'
+version = '0.0.1'
+
+def expoModulesCorePlugin = new File(project(":expo-modules-core").projectDir.absolutePath, "ExpoModulesCorePlugin.gradle")
+apply from: expoModulesCorePlugin
+applyKotlinExpoModulesCorePlugin()
+useCoreDependencies()
+useExpoPublishing()
+
+android {
+  namespace = 'expo.modules.playgamesservices'
+
+  compileSdkVersion safeExtGet("compileSdkVersion", 36)
+
+  defaultConfig {
+    minSdkVersion safeExtGet("minSdkVersion", 24)
+    targetSdkVersion safeExtGet("targetSdkVersion", 36)
+  }
+}
+
+dependencies {
+  // Google Play Games Services v2 — newer API surface that handles
+  // sign-in transparently via the Play Games app (no Google Sign-In
+  // dance). Requires the Play Games metadata in AndroidManifest.xml,
+  // wired in by `plugins/withPlayGamesServices.js`.
+  // https://developer.android.com/games/pgs/migrate-to-v2
+  implementation "com.google.android.gms:play-services-games-v2:17.0.0"
+
+  // Kotlin coroutines for the Tasks → suspend bridge so we can await
+  // GMS Task results inside our async functions.
+  implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+  implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3"
+}

@@ -1,0 +1,70 @@
+<!--
+  Bubble Masters — logo reference frame.
+
+  This SVG is the *structural template* for the app icon: rounded-square
+  backdrop, ambient halo, two gradient-ringed bubbles, sparkles. The
+  placeholder circles where the faces go are where a designer will
+  composite the actual football superstar renders (crops of
+  `assets/images/player_arg_pulga.png` and `player_arg_pibe.png`, or
+  fresh illustrations matching the chibi Art Direction spec v1.0).
+
+  Target export: 1024×1024 PNG → `assets/images/icon.png`.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1026"/>
+      <stop offset="0.5" stop-color="#1E1B4B"/>
+      <stop offset="1" stop-color="#2E1065"/>
+    </linearGradient>
+    <linearGradient id="ringPrimary" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="ringSecondary" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded-square badge -->
+  <rect x="0" y="0" width="1024" height="1024" rx="232" ry="232" fill="url(#bgGrad)"/>
+
+  <!-- Ambient halo behind the mark -->
+  <g filter="url(#glow)" opacity="0.55">
+    <circle cx="470" cy="560" r="260" fill="#6366F1"/>
+  </g>
+
+  <!-- PRIMARY BUBBLE — designer: replace inner fill with tier-12 face crop -->
+  <circle cx="410" cy="614" r="307" fill="none" stroke="url(#ringPrimary)" stroke-width="46"/>
+  <circle cx="410" cy="614" r="284" fill="#10162A" stroke="none"/>
+  <text x="410" y="622" font-family="sans-serif" font-size="36" fill="#556" text-anchor="middle" font-style="italic">
+    place tier-12 face here
+  </text>
+
+  <!-- SECONDARY BUBBLE — designer: replace inner fill with tier-10 face crop -->
+  <circle cx="758" cy="348" r="174" fill="none" stroke="url(#ringSecondary)" stroke-width="36"/>
+  <circle cx="758" cy="348" r="156" fill="#10162A" stroke="none"/>
+  <text x="758" y="356" font-family="sans-serif" font-size="22" fill="#556" text-anchor="middle" font-style="italic">
+    tier-10 face
+  </text>
+
+  <!-- Specular highlights -->
+  <circle cx="225" cy="430" r="51" fill="#ffffff" fill-opacity="0.35"/>
+  <circle cx="256" cy="410" r="20" fill="#ffffff" fill-opacity="0.7"/>
+  <circle cx="655" cy="184" r="31" fill="#ffffff" fill-opacity="0.4"/>
+
+  <!-- Merge sparkles at the overlap -->
+  <circle cx="553" cy="410" r="16" fill="#ffffff" fill-opacity="0.95"/>
+  <circle cx="512" cy="348" r="10" fill="#ffffff" fill-opacity="0.75"/>
+  <circle cx="604" cy="471" r="9" fill="#ffffff" fill-opacity="0.7"/>
+  <circle cx="471" cy="450" r="7" fill="#ffffff" fill-opacity="0.6"/>
+</svg>

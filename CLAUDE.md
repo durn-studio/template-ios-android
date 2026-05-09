@@ -1,78 +1,67 @@
-# Slam Goal — operating notes for Claude
+# Operating notes for Claude
 
-This repo is a pnpm workspace. The shipping app lives at
-`artifacts/slamgoal/`; the marketing site at `artifacts/web/`.
-Most session work targets the app — `cd artifacts/slamgoal` for
-`pnpm`, EAS, or `expo` commands.
+This repo is a **template** for new iOS + Android apps. The active
+starter lives at `artifacts/expo-template/` — most session work
+targets it. Past projects (Bubble Masters, Slam Goal, a Unity
+prototype, the API server, codegen libs, marketing site) are kept
+under `artifacts/_archive/` for reference; don't develop against
+them, but they're a useful source when wiring a new feature that
+mirrors something we've shipped before.
 
-## Project status (May 2026)
+`cd artifacts/expo-template` for `pnpm`, EAS, or `expo` commands.
 
-This codebase is a fork of the production **Bubble Masters / fruit-clash**
-Suika-style merge game, mid-rebuild as **Slam Goal** — an
-Angry-Birds-style landscape physics-destruction football game (working
-title; see `REBRANDING.md` for the identity-swap checklist and the build
-plan at `/root/.claude/plans/can-you-read-docx-delegated-haven.md` for
-the phased rollout).
+## What's in the template
 
-**Phases 0-2 have landed.** External IDs (bundle IDs, AdMob,
-RevenueCat, AppsFlyer, EAS project ID, ASC App ID) are placeholders —
-`grep -r "REPLACE_WITH_"` to find them.
+- SDK plumbing: `lib/{ads,adConfig,interstitial,purchases,analytics,gameCenter,icloudKV,social}.ts`
+  + `components/AdBanner.tsx` + `context/PurchasesContext.tsx`
+- Custom local Expo modules: `modules/expo-game-center`,
+  `expo-play-games-services`, `expo-icloud-kv`
+- Plugins: `plugins/with{AdMobMediation,GameCenter,ICloudKV,PlayGamesServices,RemoveAndroidPermissions}.js`
+- Audio infra: `hooks/useSfx.ts`, `hooks/useMusic.ts` + sample mp3s
+- App shell: `app/{_layout,index,leaderboard,smoketest,+not-found}.tsx`,
+  `ErrorBoundary`, `LoadingOverlay`, `BottomSheet`,
+  `KeyboardAwareScrollViewCompat`, `Logo`, `PhysicsCanvas`
+- Build/release: `eas.json`, `app.json` (with placeholders),
+  `scripts/optimize-images.mjs`, the `build:production` /
+  `update:production` guards in `package.json`
 
-- Phase 0: identity rebrand to Slam Goal.
-- Phase 1: stripped Bubble Masters merge gameplay, locked landscape.
-- Phase 2: physics layer wired — `planck.js` (Box2D port, JS) +
-  `@shopify/react-native-skia`. Smoke test at `/smoketest` route
-  drops N bouncing bodies and shows an FPS overlay. **Pure JS
-  physics, not native C++** — runs in Expo Go for fast iteration,
-  ships as a real native app via EAS. Migration to native C++
-  Box2D is bounded (swap `lib/physics.ts` for a native bridge);
-  trigger if profiling shows the JS step is the bottleneck above
-  ~100 dynamic bodies on a Galaxy A14.
+The example screens are deliberately minimal:
 
-The next milestone is Phase 3: slingshot input + first footballer
-+ level loader + scoring + results screen.
+- `app/index.tsx` — hello menu linking to the two demos.
+- `app/smoketest.tsx` — planck.js + Skia bouncing bodies + FPS
+  overlay. Acts as the example game and as a perf canary.
+- `app/leaderboard.tsx` — exercises the cross-platform leaderboard
+  bridge (Game Center on iOS, Play Games on Android).
 
-## Release workflow — non-negotiable
+Replace these with your app. Keep the bootstrap order in
+`app/_layout.tsx` (AppsFlyer → ATT → AdMob → app-open ad → splash
+hide) — it took several iterations to get right and is documented
+inline.
 
-**`main` is the integration trunk. Every TestFlight build comes from
-`main`. Every OTA update comes from `main`. No exceptions.**
+## First-time per-project checklist
 
-- Develop on a feature/side branch.
-- Merge to `main` when ready to ship.
-- Always build from a clean, up-to-date `main`.
+After copying this repo into a new project, run through:
 
-The `build:production` and `update:production` scripts in
-`artifacts/slamgoal/package.json` enforce this — they refuse to
-run unless current branch is `main`, the working tree is clean,
-and `HEAD` matches `origin/main` exactly. Don't bypass these
-guards. If a guard is firing, fix the underlying state (commit,
-push, merge), don't edit the script around it.
-
-### Native build vs. OTA — pick the right tool
-
-| Change touches | Run |
-|---|---|
-| Native deps, `app.json` plugins, native config, app version, the C++ physics module | `pnpm build:production` (new TestFlight build, auto-submits) |
-| JS / TSX / assets / strings / level JSON | `pnpm update:production` (OTA push to production channel) |
-
-`runtimeVersion.policy: "appVersion"` in `app.json` means OTA updates only reach
-clients on the same `version` string — bumping `version` requires a full build.
-
-### Side branches
-
-When working on a side branch:
-- Push commits to **both** the side branch and `main` only when
-  shipping (typically: merge to `main`, then push `main`). The
-  stop-hook will flag unpushed commits on the side branch — keep
-  them in sync to avoid the warning, but the build still has to
-  come from `main`.
-- Don't run `pnpm build:production` from the side branch — the
-  guard will reject it.
+1. Rename the workspace: `package.json` `name`, root `README.md`,
+   `pnpm-workspace.yaml` if you restructure.
+2. `grep -r "REPLACE_WITH_"` and fill in: bundle IDs, AdMob app IDs
+   + ad unit IDs, RevenueCat API keys, AppsFlyer dev key + Apple
+   App ID, Play Console App ID for Play Games, EAS project ID, ASC
+   App ID, backend API URL.
+3. Replace `assets/images/{icon.png,splash-bg.png}` with your app
+   art. Re-run `node scripts/generate-app-icon.mjs` if you keep an
+   SVG-driven icon (script is archived — copy from
+   `artifacts/_archive/root-scripts/`).
+4. Author or import the SFX + music files referenced by
+   `hooks/useSfx.ts` / `hooks/useMusic.ts`, or trim those hooks to
+   match the assets you actually have.
+5. Set up leaderboards in App Store Connect + Play Games Console,
+   populate `constants/gameCenter.ts` with the IDs.
 
 ## Known traps (don't reintroduce)
 
-These are inherited from the Bubble Masters era but apply identically
-to Slam Goal because the integration plumbing is the same.
+These are inherited from prior shipping versions of this repo and
+apply to anything built on top of the same plumbing.
 
 - **AdMob banner: use fixed `BannerAdSize.BANNER` (320×50), not
   `ANCHORED_ADAPTIVE_BANNER`.** Adaptive measures the parent's
@@ -90,93 +79,72 @@ to Slam Goal because the integration plumbing is the same.
   `iosAppId` / `androidAppId` / `userTrackingUsageDescription` /
   `skAdNetworkItems`. Snake_case looks plausible but the plugin
   silently treats every value as `undefined`, then native crashes
-  at launch on missing `GADApplicationIdentifier`. See `app.json`
-  under the `react-native-google-mobile-ads` plugin entry.
+  at launch on missing `GADApplicationIdentifier`. See `app.json`.
 
 ## Leaderboards (cross-platform)
 
-`lib/gameCenter.ts` is a **platform-dispatch layer**. It picks the right
-native bridge per `Platform.OS`:
+`lib/gameCenter.ts` is a **platform-dispatch layer**. It picks the
+right native bridge per `Platform.OS`:
 
 - iOS → `expo-game-center` (custom local module, GameKit / Apple).
-- Android → `expo-play-games-services` (custom local module, Google Play Games v2).
+- Android → `expo-play-games-services` (custom local module, Google
+  Play Games v2).
 - Expo Go / web → no-op stubs.
 
-Both bridges expose the same TS surface (`isAvailable`, `authenticate`, `submitScore`, `presentLeaderboard`) so the dispatch is just a `Platform.OS` switch. Don't re-introduce iOS-only assumptions in `gameCenter.ts`.
+Both bridges expose the same TS surface (`isAvailable`,
+`authenticate`, `submitScore`, `presentLeaderboard`) so the
+dispatch is just a `Platform.OS` switch. Don't re-introduce
+iOS-only assumptions in `gameCenter.ts`.
 
-Leaderboard IDs differ per platform: iOS uses reverse-DNS bundle-id strings, Android uses Console-generated opaque IDs. `constants/gameCenter.ts` exposes `leaderboardIdForWorld(worldId)` and `overallLeaderboardId()` that resolve to the active platform's ID. The Android map (`ANDROID_LEADERBOARD_IDS_BY_WORLD`) starts empty — populate it as leaderboards are created in Play Games Console.
+Leaderboard IDs differ per platform: iOS uses reverse-DNS
+bundle-id strings, Android uses Console-generated opaque IDs.
+`constants/gameCenter.ts` exposes `leaderboardIdForWorld(id)` and
+`overallLeaderboardId()` that resolve to the active platform's ID.
+The Android map (`ANDROID_LEADERBOARD_IDS_BY_WORLD`) starts empty —
+populate it as you create leaderboards in Play Games Console.
 
-The Android plugin (`plugins/withPlayGamesServices.js`) writes the Play Games App ID into `AndroidManifest.xml` + `strings.xml`. The App ID lives in `app.json` under the plugin's config block — replace `REPLACE_WITH_PLAY_CONSOLE_APP_ID` with the value from Play Console → Game services → Configuration.
+The Android plugin (`plugins/withPlayGamesServices.js`) writes the
+Play Games App ID into `AndroidManifest.xml` + `strings.xml`. The
+App ID lives in `app.json` under the plugin's config block —
+replace `REPLACE_WITH_PLAY_CONSOLE_APP_ID` with the value from Play
+Console → Game services → Configuration.
 
 ## Image optimisation
 
-`assets/images/` ships as **WebP at quality 80, max 512 px** for sprites and **max 1024 px** for `bg-*` / `map-bg` / `splash-*` backgrounds. iOS and Android both use the same files — there's no platform-split. Source PNGs at 1024×1024 RGBA are wasteful (rendered sprites are ≤ 280 px on screen, so the extra resolution is downsampled-and-thrown-away every frame), and Play Console's 200 MB compressed-bundle cap makes them a hard blocker on Android.
-
-For Slam Goal's larger sprite atlases (per the design doc, 2048×2048
-per world), the script will need a tunable `--max` flag — extend
-`scripts/optimize-images.mjs` when Phase 5 art lands.
-
-### Adding a new image batch (PNG source)
+`assets/images/` ships as **WebP at quality 80, max 512 px** for
+sprites and **max 1024 px** for `bg-*` / `splash-*` backgrounds.
+Source PNGs at 1024×1024 RGBA are wasteful (rendered sprites are
+≤ 280 px on screen) and Play Console's 200 MB compressed-bundle cap
+makes them a hard blocker on Android.
 
 ```bash
-# Drop the PNGs into artifacts/slamgoal/assets/images/, then:
+# Drop the PNGs into artifacts/expo-template/assets/images/, then:
 pnpm optimize:images
-# Update imports in callers to reference .webp instead of .png.
-git add -A
-git commit -m "feat(theme): add <name> assets"
 ```
 
-The script is idempotent — only touches `.png` files, ignores existing `.webp`, won't double-process. Safe to run any time.
+The script is idempotent — only touches `.png` files, ignores
+existing `.webp`, won't double-process. Safe to run any time.
 
-### Don't reintroduce PNGs at runtime
-
-If you find PNG files in `assets/images/`, run the script. Don't ship them — Android Play Console will reject the upload, and iOS download sizes balloon for no quality gain.
+If you find PNG files in `assets/images/` at commit time, run the
+script. Don't ship them — Play Console will reject the upload, and
+iOS download sizes balloon for no quality gain.
 
 ## Audio
 
-All SFX are `.mp3` (was `.wav`; switched for size). Catalogue at
-`hooks/useSfx.ts:38` keyed by `SfxName`. Filenames must be
-camelCase to match the keys (`mergeBig.mp3`, not `mergebig.mp3`)
-since Metro's `require()` is case-sensitive.
+The SFX catalogue is at `hooks/useSfx.ts` keyed by `SfxName`.
+Filenames must be camelCase to match the keys (`mergeBig.mp3`, not
+`mergebig.mp3`) since Metro's `require()` is case-sensitive. All
+sounds are `.mp3` (not `.wav`) for size.
 
-The current SFX library is the merge-game inventory. Slam Goal's
-~150-sound library (slingshot, materials, abilities, environment,
-crowd) gets authored in Phase 4-5; the keying convention stays the
-same.
-
-## Where things live (current state)
-
-- **Reusable shell (kept from Bubble Masters):**
-  - `lib/ads.ts`, `lib/adConfig.ts`, `components/AdBanner.tsx` — AdMob
-  - `lib/purchases.ts`, `context/PurchasesContext.tsx` — RevenueCat
-  - `lib/gameCenter.ts` + `modules/expo-game-center/` + `modules/expo-play-games-services/` — leaderboards
-  - `lib/icloudKV.ts` + `modules/expo-icloud-kv/` — cross-device save sync
-  - `lib/analytics.ts` — AppsFlyer
-  - `hooks/useSfx.ts`, `hooks/useMusic.ts` — audio playback (sound files swap, code stays)
-  - `app/_layout.tsx`, `app/leaderboard.tsx` — navigation + leaderboard UI
-  - `app/+not-found.tsx` — 404
-- **Stripped in Phase 1 (no longer present):**
-  - `app/game.tsx`, `app/themes.tsx`, `app/worlds.tsx` — old merge UI
-  - `hooks/usePhysicsGame.ts` — old JS merge physics engine
-  - `constants/{worlds,levels,playerImages,dailyQuests}.ts`
-  - `components/DailyQuestsCard.tsx`
-  - Merge-specific portions of `context/GameContext.tsx` and `app/index.tsx`
-- **Phase 2 (landed):**
-  - `lib/physics.ts` — thin wrapper around planck.js
-  - `components/PhysicsCanvas.tsx` — Skia canvas + JS-thread RAF loop
-  - `app/smoketest.tsx` — perf canary route (FPS overlay, 50-100 bodies)
-- **Coming in Phase 3+:**
-  - New `app/game.tsx` — slingshot + level renderer
-  - `components/{Slingshot,ResultsScreen}.tsx`
-  - `constants/{footballers,materials}.ts`
-  - `lib/levelLoader.ts` + `assets/levels/world-1/*.json`
+The current files are placeholders inherited from the merge-game
+era — swap them for your project's sounds and update the `SfxName`
+union and the `SFX_SOURCES` map together.
 
 ## Stylistic conventions
 
 - Don't add comments that explain what well-named code does.
   Comments are for **why** — hidden constraints, workarounds,
-  surprising behavior. The existing codebase follows this; match
-  it.
+  surprising behavior. The existing codebase follows this; match it.
 - TypeScript strict mode is on.
 - No new files unless required. Edit existing ones.
 
